@@ -4,14 +4,14 @@ import sam from "../../assets/Img/sam.png";
 const Testimonial = () => {
   return (
     <section className="flex items-center justify-center py-20 min-w-screen">
-      <div className="mt-14 flex flex-col md:flex-row justify-center items-center max-w-6xl bg-white rounded-xl p-4 md:p-6">
+      <div className="mt-14 flex flex-col md:flex-row justify-center items-center max-w-6xl  rounded-xl p-4 md:p-6">
         <div className="relative h-60 xl:h-80 ">
           <img
             src={sam}
             alt="profile"
             className="w-full h-full object-cover rounded-xl"
           />
-          <div className="hidden md:flex items-center justify-center w-14 h-14 bg-[#f9f9f9] rounded-md absolute bottom-0 right-0 -mb-4 -mr-4">
+          <div className="hidden md:flex items-center justify-center w-14 h-14 bg-white rounded-md absolute bottom-0 right-0 -mb-4 -mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="black"

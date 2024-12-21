@@ -7,7 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Resource from "./pages/Resource";
-
+import Shyftlabs from "./pages/Shyftlabs";
 
 import {
   BrowserRouter as Router,
@@ -60,6 +60,7 @@ root.render(
         <Route path="/Resume" element={<Resume/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/resource" element={<Resource />} />
+        <Route path="Shyftlabs" element={<Shyftlabs />} />
       </Routes>
     </Router>
   </div>
