@@ -11,7 +11,7 @@ const Testimonial = () => {
             alt="profile"
             className="w-full h-full object-cover rounded-xl"
           />
-          <div className="hidden md:flex items-center justify-center w-14 h-14 bg-white rounded-md absolute bottom-0 right-0 -mb-4 -mr-4">
+          <div className="hidden md:flex items-center justify-center w-14 h-14 bg-[#d6f928]  rounded-md absolute -top-4 -right-4 -mb-4 -mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="black"

@@ -20,34 +20,34 @@ const Skills = () => {
             cursus, elit vitae fermentum.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-24 pt-20">
+        <div class="grid grid-cols-2 gap-y-8 gap-x-24 pt-10">
           <div className="  p-6 border-b border-gray-200">
-            <div className="bg-white p-6 outline outline-gray-200 w-4 h-4 rounded-md flex justify-center items-center">
+            <div className="bg-[#f9f9f9] p-6 w-4 h-4 rounded-md flex justify-center items-center">
               {" "}
               <PenIcon />
             </div>
-            <div class="text-md font-regular pt-6">User Interface Design</div>
+            <div class="text-md font-semibold pt-6">User Interface Design</div>
             <p className="text-sm font-regular text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               cursus, elit vitae fermentum.s
             </p>
           </div><div className="border-b border-gray-200 p-6 ">
-            <div className="bg-white p-6 outline outline-gray-200 w-4 h-4 rounded-md flex justify-center items-center">
+          <div className="bg-[#f9f9f9] p-6 w-4 h-4 rounded-md flex justify-center items-center">
               {" "}
               <OperationsIcon />
             </div>
-            <div class="text-md font-regular pt-6">Workshop & Planning</div>
+            <div class="text-md font-semibold pt-6">Workshop & Planning</div>
             <p className="text-sm font-regular text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               cursus, elit vitae fermentum.s
             </p>
           </div>
           <div className="border-b border-gray-200 p-6 ">
-            <div className="bg-white p-6 outline outline-gray-200 w-4 h-4 rounded-md flex justify-center items-center">
+          <div className="bg-[#f9f9f9] p-6 w-4 h-4 rounded-md flex justify-center items-center">
               {" "}
               <SmartLinkListIcon />
             </div>
-            <div class="text-md font-regular pt-6">
+            <div class="text-md font-semibold pt-6">
               User Experience Research
             </div>
             <p className="text-sm font-regular text-gray-500 mt-2">
@@ -56,22 +56,22 @@ const Skills = () => {
             </p>
           </div>
           <div className="border-b border-gray-200 p-6 ">
-            <div className="bg-white p-6 outline outline-gray-200 w-4 h-4 rounded-md flex justify-center items-center">
+          <div className="bg-[#f9f9f9] p-6 w-4 h-4 rounded-md flex justify-center items-center">
               {" "}
               <AngleBracketsIcon />
             </div>
-            <div class="text-md font-regular pt-6">Full Stack Development</div>
+            <div class="text-md font-semibold pt-6">Full Stack Development</div>
             <p className="text-sm font-regular text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               cursus, elit vitae fermentum.s
             </p>
           </div>
           <div className="border-b border-gray-200 p-6 ">
-            <div className="bg-white p-6 outline outline-gray-200 w-4 h-4 rounded-md flex justify-center items-center">
+          <div className="bg-[#f9f9f9] p-6 w-4 h-4 rounded-md flex justify-center items-center">
               {" "}
               <DashboardIcon />
             </div>
-            <div class="text-md font-regular pt-6">
+            <div class="text-md font-semibold pt-6">
               {" "}
               Wireframing & Content Architecture
             </div>
@@ -81,12 +81,12 @@ const Skills = () => {
             </p>
           </div>
           <div className="border-b border-gray-200 p-6 ">
-            <div className="bg-white p-6 outline outline-gray-200 w-4 h-4 rounded-md flex justify-center items-center">
+          <div className="bg-[#f9f9f9] p-6 w-4 h-4 rounded-md flex justify-center items-center">
               {" "}
               <AutomationIcon />
             </div>
-            <div class="text-md font-regular pt-6">
-              Prototyping & Intraction Design
+            <div class="text-md font-semibold pt-6">
+              Prototyping & Interaction Design
             </div>
             <p className="text-sm font-regular text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

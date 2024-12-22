@@ -8,6 +8,8 @@ import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Resource from "./pages/Resource";
 import Shyftlabs from "./pages/Shyftlabs";
+import Blog from "./pages/Blog";
+import Projects from "./pages/Projects";
 
 import {
   BrowserRouter as Router,
@@ -56,11 +58,13 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/home" element={<LandingPage />} />
+        <Route path="/Home" element={<LandingPage />} />
         <Route path="/Resume" element={<Resume/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Projects" element={<Projects />} />
         <Route path="/resource" element={<Resource />} />
         <Route path="Shyftlabs" element={<Shyftlabs />} />
+        <Route path="Blog" element={<Blog />} />
       </Routes>
     </Router>
   </div>
