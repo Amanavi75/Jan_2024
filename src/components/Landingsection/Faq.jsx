@@ -7,32 +7,28 @@ const Faq = () => {
   // FAQ data
   const faqData = [
     {
-      question: "How can I pay for my appointment?",
+      question: "How can we collaborate with you for a design project?",
       answer:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?",
+        "I’m flexible in my approach, I take on freelance projects depending on the timeline and scope. Feel free to reach out with your requirements for further discussion.",
     },
     {
-      question:
-        "Is the cost of the appointment covered by private health insurance?",
+      question: "Do you conduct workshops or webinars on UI/UX Design?",
       answer:
-        "Yes, the cost may be covered depending on your private health insurance plan. Please consult your provider for more details.",
+        "Yes, I regularly host events and webinars on topics like ‘The Psychology of Colors in Design’ and ‘Intro to UI/UX’. I’m open to partnering with organizations or educational institutions for similar events.",
     },
     {
-      question: "Do I need a referral?",
+      question: "What kind of companies or industries have you worked with?",
       answer:
-        "No, you do not need a referral. You can book an appointment directly with us.",
+        "I’ve worked with clients in tech, fashion, and education, including projects for startups, established companies, and even public events like webinars.",
     },
     {
-      question: "What are your opening hours?",
+      question: "Can we hire you for long-term collaboration or consulting?",
       answer:
-        "Our opening hours are Monday to Friday, 9 AM to 5 PM. We are closed on weekends and public holidays.",
-    },
-    {
-      question: "What can I expect at my first consultation?",
-      answer:
-        "At your first consultation, we will review your medical history, discuss your concerns, and create a personalized treatment plan.",
+        "Yes, I’m open to long-term collaborations, either as a consultant or part of your design team, depending on the project requirements.",
     },
   ];
+
+  
 
   // Toggle FAQ visibility
   const toggleFaq = (index) => {

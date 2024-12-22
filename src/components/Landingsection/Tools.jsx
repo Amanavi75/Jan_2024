@@ -27,7 +27,7 @@ const Tools = () => {
             </div>
             <div className=" h-[50%] bg-[#f9f9f9] border-t border-gray-200">
               <div class="text-md font-semibold text-center pt-6">
-                35+
+                100%
               </div>
               <p className="text-s font-regular text-center text-gray-500 mt-2">
                 Happy Client
@@ -53,7 +53,7 @@ const Tools = () => {
             </div>
             <div className=" h-[50%] bg-[#f9f9f9] border-t border-gray-200">
               <div class="text-md font-semibold text-center pt-6">
-                3+
+                2+
               </div>
               <p className="text-sm font-regular text-center text-gray-500 mt-2">
                 Experience
@@ -63,10 +63,10 @@ const Tools = () => {
           <div className="w-40 h-60">
             <div className=" h-[50%] bg-[#f9f9f9] ">
               <div class="text-md font-semibold text-center pt-6">
-                35+
+                3
               </div>
               <p className="text-sm font-regular text-center text-gray-500 mt-2">
-                Projects
+                Public Events
               </p>
             </div>
             <div className=" h-[50%] border-t border-gray-200 bg-white flex justify-center content-center items-center ">
