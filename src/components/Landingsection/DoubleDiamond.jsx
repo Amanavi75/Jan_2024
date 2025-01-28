@@ -2,7 +2,7 @@ import React from 'react';
 
 const DoubleDiamond = () => {
   return (
-    <div className="flex flex-col items-center bg-white text-black py-20 px-4">
+    <div className="flex flex-col items-center bg-white text-black py-32 px-4">
 
       <h1 className="text-2xl font-regular mb-6 text-center pb-20">Double Diamond Project Planning</h1>
 

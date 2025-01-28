@@ -1,10 +1,5 @@
 import React from "react";
 import PenIcon from "@atlaskit/icon/core/pen";
-import OperationsIcon from "@atlaskit/icon/core/operations";
-import SmartLinkListIcon from "@atlaskit/icon/core/smart-link-list";
-import AngleBracketsIcon from "@atlaskit/icon/core/angle-brackets";
-import DashboardIcon from "@atlaskit/icon/core/dashboard";
-import AutomationIcon from "@atlaskit/icon/core/automation";
 
 const Tools = () => {
   return (
