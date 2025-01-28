@@ -1,4 +1,5 @@
 import React from "react";
+import jwell from "../../assets/Project/jwell";
 
 const Projects = () => {
   return (
@@ -9,7 +10,7 @@ const Projects = () => {
           <li>
             <img
               class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+              src={jwell}
               alt=""
             />
             <img src="./facebook.svg" alt="Facebook" />
