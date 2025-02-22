@@ -1,16 +1,15 @@
 import React from "react";
-import jwell from "../../assets/Project/jwell";
 
 const Projects = () => {
   return (
-    <div className="py-36 max-w-6xl mx-auto">
+    <div className="py-36 max-w-6xl mx-auto overflow-hidden">
 
       <div class="w-full inline-flex flex-nowrap">
         <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-[400px] animate-infinite-scroll">
           <li>
             <img
               class="h-auto max-w-full rounded-lg"
-              src={jwell}
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
               alt=""
             />
             <img src="./facebook.svg" alt="Facebook" />

@@ -10,6 +10,7 @@ import Resource from "./pages/Resource";
 import Shyftlabs from "./pages/Shyftlabs";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
+import RaikarGoodVibes from "./components/Landingsection/Casestudy/RaikarGoodVibes";
 
 import {
   BrowserRouter as Router,
@@ -58,13 +59,14 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Home" element={<LandingPage />} />
-        <Route path="/Resume" element={<Resume/>} />
-        <Route path="/Contact" element={<Contact/>} />
-        <Route path="/Projects" element={<Projects />} />
+        <Route path="/home" element={<LandingPage />} />
+        <Route path="/resume" element={<Resume/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/resource" element={<Resource />} />
-        <Route path="Shyftlabs" element={<Shyftlabs />} />
-        <Route path="Blog" element={<Blog />} />
+        <Route path="shyftlabs" element={<Shyftlabs />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="/Projects/RaikarsGoodVibes" element={<RaikarGoodVibes />} />
       </Routes>
     </Router>
   </div>
