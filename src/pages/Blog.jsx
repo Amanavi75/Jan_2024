@@ -1,96 +1,81 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import color from "../assets/Blog/color.jpg";
+import fonts from "../assets/blog/fonts.jpg";
+import uiux from "../assets/blog/uiux.jpg";
+import Underlinebutton from "../components/elements/Underlinebutton";
+
+const blogPosts = [
+  {
+    title: "Difference Between UI/UX",
+    description:
+      "UI is what the user sees and interacts with, while UX is the overall experience...",
+    category: "UI/UX",
+    image: uiux,
+    link: "https://www.instagram.com/p/Cou2nJ2v9th/",
+  },
+  {
+    title: "Emotion created by Color",
+    description:
+      "Warm tones like red evoke passion, love, and energy, while cool blues bring calmness...",
+    category: "Color",
+    image: color,
+    link: "https://www.instagram.com/p/Cq0mVv4JklS/",
+  },
+  {
+    title: "Emotion conveyed by Fonts",
+    description:
+      "Bold, uppercase fonts may express strength and urgency, while cursive scripts evoke elegance...",
+    category: "Fonts",
+    image: fonts,
+    link: "https://www.instagram.com/p/Co5OwmeStTR/",
+  },
+];
 
 const Blog = () => {
-  const sections = [
-    {
-      title: "What Is UX?",
-      content: `
-        UX stands for User Experience, which refers to the feelings and
-        perceptions a person has when using a product, service, or system.
-        The goal of UX design is to create a positive and efficient
-        experience for the user by designing products that meet their needs
-        in the most intuitive way.
-      `,
-      image: {
-        src: "https://images.unsplash.com/photo-1576153192396-180ecef2a715?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "UX Design Concept",
-      },
-    },
-    {
-      title: "UX: The Perfect Fit for You?",
-      content: `
-        Think of UX design like being a party planner. Instead of planning
-        a party, you're designing a user’s experience with a website or
-        app. You ensure everything runs smoothly, avoids technical
-        glitches, and makes users happy. If you enjoy solving problems and
-        making people’s lives better, UX could be your calling!
-      `,
-    },
-    {
-      title: "Key Facts about UX Design:",
-      content: `
-        Here are some key aspects of UX design:
-      `,
-      list: [
-        "Focuses on the overall user experience with a product/service",
-        "Requires understanding user needs and goals",
-        "Involves multidisciplinary collaboration",
-        "Demands constant iteration and testing",
-        "Improves customer satisfaction and business success",
-        "Goes beyond aesthetics to include functionality",
-        "Applies to both digital and physical products",
-      ],
-    },
-    {
-      title: "Common Myths about UX Design:",
-      content: `
-        There are several misconceptions about UX design:
-      `,
-      list: [
-        "UX is only about appearance",
-        "UX applies only to digital products",
-        "UX is a one-time process",
-        "UX is only for big companies",
-        "UX is solely about making things easier",
-      ],
-    },
-  ];
-
   return (
-    <div>
+    <div className="container__wrapper">
       <Navbar />
-      <div className="pt-28 pb-4 flex flex-col items-center text-center">
-        <h1 className="title-font tracking-wide text-xl md:text-2xl xl:text-2xl font-regular">
-          Difference Between UI/UX
-        </h1>
-        <p className="text-sm md:text-md ">Best of</p>
+      <div className="max-w-7xl mx-auto px-4 md:px-12 pt-32">
+        <p className="text-2xl md:text-3xl font-semibold text-gray-900 text-center">
+          Design Systems
+        </p>
+        <h2 className="text-sm md:text-md font-light text-center text-gray-600 py-2 pb-10">
+          Crafting intuitive, accessible, and visually compelling designs.
+        </h2>
       </div>
 
-      <div className="px-4 mx-auto max-w-screen-xl">
-        <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-          {sections.map((section, index) => (
-            <section key={index} className="pt-6">
-              <h2 className="suman text-xl">{section.title}</h2>
-              <p>{section.content}</p>
-              {section.image && (
+      <div className="max-w-7xl mx-auto px-4 md:px-12 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {blogPosts.map((post, index) => (
+            <Link
+              to={post.link}
+              target="_blank"
+              key={index}
+             
+            >
+              <div className="rounded-xl ">
                 <img
-                  src={section.image.src}
-                  alt={section.image.alt}
-                  className="mt-4"
+                  className="w-full h-48 object-cover"
+                  src={post.image}
+                  alt={post.title}
                 />
-              )}
-              {section.list && (
-                <ul className="list-disc list-inside">
-                  {section.list.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              )}
-            </section>
+                <div className="pt-3">
+                  <p className="text-lg font-semibold text-gray-900">
+                    {post.title}
+                  </p>
+                  <p className="text-sm text-gray-600 mb-4">{post.description}</p>
+                  <Underlinebutton text1="Click to visit" />
+                </div>
+              </div>
+            </Link>
           ))}
-        </article>
+        </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

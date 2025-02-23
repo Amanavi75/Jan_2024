@@ -5,7 +5,7 @@ import suman from "../assets/Img/suman.jpg";
 
 const Resume = () => {
   return (
-    <div>
+    <div className="container__wrapper">
       <Navbar />
       <main className="max-w-4xl mx-auto px-6 pt-40">
         <section className="my-16">

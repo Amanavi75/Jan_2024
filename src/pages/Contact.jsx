@@ -52,9 +52,9 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="container__wrapper">
       <Navbar />
-      <div className="flex justify-center bg-white items-center min-h-screen">
+      <div className="flex justify-center items-center min-h-screen">
         <div className="w-full max-w-lg p-6">
           <h1 className="text-2xl font-medium text-gray-800 text-center">
             Contact Us
@@ -105,7 +105,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   placeholder="Your email"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm  sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-00 rounded-md shadow-sm  sm:text-sm"
                   required
                 />
               </div>
