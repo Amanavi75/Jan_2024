@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import branding from "../assets/Icons/branding.png";
-import Atlassian from "../assets/Icons/Atlassian.png";
+import Atlassian from "../assets/Icons/atlassian.png";
 import IBM from "../assets/Icons/IBM.png";
 import Underlinebutton from "../components/elements/Underlinebutton";
 
