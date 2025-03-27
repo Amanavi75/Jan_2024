@@ -1,5 +1,5 @@
 import React from "react";
-import Blackbutton from "../elements/Blackbutton";
+import BlackButton from "../elements/BlackButton";
 import OutlineButton from "../elements/OutlineButton";
 
 const HeroSection = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
           presence deserves more than just a good design
         </h2>
         <div className="flex gap-4">
-          <Blackbutton text1="View Projects" />
+          <BlackButton text1="View Projects" />
           <OutlineButton text1="View Blog" />
         </div>
       </div>

@@ -5,6 +5,9 @@ const Blackbutton = (props) => {
 
   return (
     //hello button
+    <div>
+
+    
     <div className="bg-black rounded-lg max-w-fit flex items-center justify-center gap-2 p-2 px-4">
       <p className="text-white">{text1}</p>
       {text2 !== "text" && (
@@ -12,6 +15,7 @@ const Blackbutton = (props) => {
           <p className="text-black">{text2}</p>
         </div>
       )}
+    </div>
     </div>
   );
 };
