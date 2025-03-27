@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CarterDSL from "../../../assets/Project/CarterDSL.png";
-import CarterRedesign from "../../../assets/Project/Carteredesign.png";
+import CarterRedesign from "../../../assets/Project/CarteRedesign.png";
 import UVC from "../../../assets/Project/uvc.png";
 import Raikar from "../../../assets/Project/raikar.webp";
 
