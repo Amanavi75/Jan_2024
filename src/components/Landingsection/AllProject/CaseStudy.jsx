@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import CarterDSL from "../../../assets/Project/CarterDSL.png";
-import CarterRedesign from "../../../assets/Project/CarterRedesign.png";
-import UVC from "../../../assets/Project/UVC.png";
-import Raikar from "../../../assets/Project/Raikar.webp";
+import CarterDSL from "../../../assets/Project/carterDSL.png";
+import CarterRedesign from "../../../assets/Project/carterRedesign.png";
+import UVC from "../../../assets/Project/uvc.png";
+import Raikar from "../../../assets/Project/Paikar.webp";
 
 const CaseStudy = () => {
   const navigate = useNavigate();

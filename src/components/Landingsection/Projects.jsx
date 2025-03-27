@@ -1,20 +1,20 @@
 import React from "react";
-import Anime from "../../assets/Project/Anime.webp";
-import API from "../../assets/Project/API.webp";
-import Drink from "../../assets/Project/Drink.webp";
-import Health from "../../assets/Project/Health.webp";
-import Fashion from "../../assets/Project/Fashion.webp";
-import Glamor from "../../assets/Project/Glamor.webp";
-import Jewll from "../../assets/Project/Jewll.webp"; // Fixed Import Name
-import Jobringer from "../../assets/Project/Jobringer.webp";
-import Jwells from "../../assets/Project/Jwells.webp";
-import Kploy from "../../assets/Project/Kploy.webp";
-import NFT from "../../assets/Project/NFT.webp";
-import Payment from "../../assets/Project/Payment.webp";
-import Pizza from "../../assets/Project/Pizza.webp";
-import Raikar from "../../assets/Project/Raikar.webp";
-import Shopify from "../../assets/Project/Shopify.webp";
-import Shopping from "../../assets/Project/Shopping.webp";
+import Anime from "../../assets/Project/anime.webp";
+import API from "../../assets/Project/api.webp";
+import Drink from "../../assets/Project/drink.webp";
+import Health from "../../assets/Project/health.webp";
+import Fashion from "../../assets/Project/fashion.webp";
+import Glamor from "../../assets/Project/glamor.webp";
+import Jewll from "../../assets/Project/jewll.webp"; // Fixed Import Name
+import Jobringer from "../../assets/Project/jobringer.webp";
+import Jwells from "../../assets/Project/jwells.webp";
+import Kploy from "../../assets/Project/kploy.webp";
+import NFT from "../../assets/Project/nft.webp";
+import Payment from "../../assets/Project/payment.webp";
+import Pizza from "../../assets/Project/pizza.webp";
+import Raikar from "../../assets/Project/raikar.webp";
+import Shopify from "../../assets/Project/shopify.webp";
+import Shopping from "../../assets/Project/shopping.webp";
 
 const images = [
   Anime, API, Drink, Health, Fashion, Glamor, Jewll, Jobringer,
