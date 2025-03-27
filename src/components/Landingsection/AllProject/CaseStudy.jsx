@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CarterDSL from "../../../assets/Project/CarterDSL.png";
 import CarterRedesign from "../../../assets/Project/CarterRedesign.png";
-import UVC from "../../../assets/Project/uvc.png";
+import UVC from "../../../assets/Project/UVC.png";
 import Raikar from "../../../assets/Project/raikar.webp";
 
 const CaseStudy = () => {
