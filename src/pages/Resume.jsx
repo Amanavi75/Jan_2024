@@ -12,7 +12,7 @@ const Resume = () => {
           <h1 className="text-3xl font-semibold">Suman Sourabh</h1>
           <div className="mt-6">
             <p className="text-md font-semibold text-gray-800">
-              Product Designer | UX/UI Designer | Frontend Developer
+              Product Designer at Shyftlabs
             </p>
             <p className="text-sm font-regular text-gray-500 ">
               B.Tech in Computer Science & Engineering, 2024
@@ -20,8 +20,9 @@ const Resume = () => {
           </div>
 
           <p className="text-sm font-regula mt-2">
-            Product Designer with 1 years of experience. Specializing in
-            Dashboard, Web Design, UX Research.
+            Product Designer with expertise in user-centered design, intuitive
+            interfaces, and design systems. Proven ability to enhance customer
+            satisfaction, streamline workflows, and deliver engaging features.
           </p>
         </section>
 
@@ -38,16 +39,35 @@ const Resume = () => {
             <p className="text-gray-600">January 2024—Present. Noida, India</p>
             <ul className="list-disc list-inside mt-4 space-y-2">
               <li>
-                Working on leading Product{" "}
+                Currently Leading the Product{" "}
                 <span className="font-semibold">Carter (RMN)</span>
               </li>
               <li>
-                Design DRI (Directly Responsible Individual) for multiple
-                tentpole projects within two major products
+                Managed multiple projects effectively in demanding environment
+                with tight deadlines.
               </li>
               <li>
-                Successful timely delivery of compelling experiences that
-                launched to millions of users
+                Collaborated cross-functionally with developers, engineers, and
+                stakeholders throughout the product lifecycle, aligning design
+                vision with technical specifications, optimizing performance,
+                and facilitating workshops for input and buy-in.
+              </li>
+              <li>
+                Designed and maintained comprehensive design systems, reusable
+                style guides, and UI components, enabling efficient scaling of
+                product features while ensuring consistency and streamlined
+                workflows.
+              </li>
+              <li>
+                Spearheaded user-centered design processes by conducting
+                in-depth user research, implementing feedback loops, and
+                developing accessible, intuitive interfaces for mobile and web
+                applications, resulting in improved customer satisfaction and
+                engagement.
+              </li>
+              <li>
+                Mentored designers, fostered a culture of continuous learning,
+                and documented design processes.
               </li>
             </ul>
           </div>
@@ -60,16 +80,50 @@ const Resume = () => {
             </p>
             <ul className="list-disc list-inside mt-4 space-y-2">
               <li>
-                Working on leading Product{" "}
-                <span className="font-semibold">Carter (RMN)</span>
+                Stayed up-to-date with industry trends by regularly attending
+                workshops, conferences, and webinars related to UI/UX design
+                principles.
               </li>
               <li>
-                Design DRI (Directly Responsible Individual) for multiple
-                tentpole projects within two major products
+                Created wireframes and mockups for mobile applications, ensuring
+                consistency across multiple platforms and devices.
               </li>
               <li>
-                Successful timely delivery of compelling experiences that
-                launched to millions of users
+                Designed visually appealing and engaging websites for clients,
+                resulting in increased web traffic and conversions.
+              </li>
+              <li>
+                Collaborated with developers to create seamless transitions
+                between design and development phases, improving overall project
+                efficiency.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-12">
+            <h3 className="font-semibold text-lg">
+              RaikarsGoodVibes. UI Consultant
+            </h3>
+            <p className="text-gray-600">Nov 2022—Feb 2023. Punjab, India</p>
+            <ul className="list-disc list-inside mt-4 space-y-2">
+              <li>
+                Streamlined navigation in existing applications through
+                redesigns that prioritized usability and user satisfaction.{" "}
+              </li>
+              <li>
+                Analyzed user feedback and data to inform ongoing design
+                iterations, leading to continuous improvement in UI
+                solutions.Created wireframes and mockups for mobile
+                applications, ensuring consistency across multiple platforms and
+                devices.
+              </li>
+              <li>
+                Adapted quickly to changing priorities or new information during
+                the course of a project without sacrificing quality or
+                efficiency in deliverables.
+              </li>
+              <li>
+                Led design workshops with clients to gather feedback and refine
+                interface concepts based on their input.
               </li>
             </ul>
           </div>
@@ -82,21 +136,34 @@ const Resume = () => {
 
           <div className="mt-6">
             <h3 className="font-semibold text-lg">
-              Shyftlabs. Product Designer
+            Psychology of Colors in Graphic Design (Sep 23)
             </h3>
-            <p className="text-gray-600">January 2024—Present. Noida, India</p>
+            <p className="text-gray-600">Lovely Professional University</p>
             <ul className="list-disc list-inside mt-4 space-y-2">
               <li>
-                Working on leading Product{" "}
-                <span className="font-semibold">Carter (RMN)</span>
+              Led a seminar for 150+ attendees at Lovely Professional University, featuring hands-on Figma poster design practice.
               </li>
+            </ul>
+          </div>
+          <div className="mt-6">
+            <h3 className="font-semibold text-lg">
+            Intro to UI/UX (Dec 22)
+            </h3>
+            <p className="text-gray-600">Lovely Professional University</p>
+            <ul className="list-disc list-inside mt-4 space-y-2">
               <li>
-                Design DRI (Directly Responsible Individual) for multiple
-                tentpole projects within two major products
+              Designed a landing page for a shoe brand, replicated 500+ times in Figma Communities.
               </li>
+            </ul>
+          </div>
+          <div className="mt-6">
+            <h3 className="font-semibold text-lg">
+            UI/UX Design with Figma (Nov 22) 
+            </h3>
+            <p className="text-gray-600">Lovely Professional University</p>
+            <ul className="list-disc list-inside mt-4 space-y-2">
               <li>
-                Successful timely delivery of compelling experiences that
-                launched to millions of users
+              Conducted a seminar for 150+ attendees at Lovely Professional University; design gained 850+ copies on Figma Community.
               </li>
             </ul>
           </div>
