@@ -1,43 +1,38 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
-import color from "../assets/Blog/color.jpg";
-import fonts from "../assets/blog/fonts.jpg";
-import uiux from "../assets/blog/uiux.jpg";
+
 import Underlinebutton from "../components/elements/Underlinebutton";
 
-const blogPosts = [
-  {
-    title: "Difference Between UI/UX",
-    description:
-      "UI is what the user sees and interacts with, while UX is the overall experience...",
-    category: "UI/UX",
-    image: uiux,
-    link: "https://www.instagram.com/p/Cou2nJ2v9th/",
-  },
-  {
-    title: "Emotion created by Color",
-    description:
-      "Warm tones like red evoke passion, love, and energy, while cool blues bring calmness...",
-    category: "Color",
-    image: color,
-    link: "https://www.instagram.com/p/Cq0mVv4JklS/",
-  },
-  {
-    title: "Emotion conveyed by Fonts",
-    description:
-      "Bold, uppercase fonts may express strength and urgency, while cursive scripts evoke elegance...",
-    category: "Fonts",
-    image: fonts,
-    link: "https://www.instagram.com/p/Co5OwmeStTR/",
-  },
-];
+// const blogPosts = [
+//   {
+//     title: "Difference Between UI/UX",
+//     description:
+//       "UI is what the user sees and interacts with, while UX is the overall experience...",
+//     category: "UI/UX",
+//     image: uiux,
+//     link: "https://www.instagram.com/p/Cou2nJ2v9th/",
+//   },
+//   {
+//     title: "Emotion created by Color",
+//     description:
+//       "Warm tones like red evoke passion, love, and energy, while cool blues bring calmness...",
+//     category: "Color",
+//     image: color,
+//     link: "https://www.instagram.com/p/Cq0mVv4JklS/",
+//   },
+//   {
+//     title: "Emotion conveyed by Fonts",
+//     description:
+//       "Bold, uppercase fonts may express strength and urgency, while cursive scripts evoke elegance...",
+//     category: "Fonts",
+//     image: fonts,
+//     link: "https://www.instagram.com/p/Co5OwmeStTR/",
+//   },
+// ];
 
 const Blog = () => {
   return (
     <div className="container__wrapper">
-      <Navbar />
+      {/* <Navbar />
       <div className="max-w-7xl mx-auto px-4 md:px-12 pt-32">
         <p className="text-2xl md:text-3xl font-semibold text-gray-900 text-center">
           Design Systems
@@ -75,7 +70,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
