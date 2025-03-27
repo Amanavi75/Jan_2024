@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Anime from "../../../assets/Project/Anime.webp";
-import API from "../../../assets/Project/API.webp";
-import Drink from "../../../assets/Project/Drink.webp";
-import Fashion from "../../../assets/Project/Fashion.webp";
-import Jewll from "../../../assets/Project/Jewll.webp";
-import Jobringer from "../../../assets/Project/Jobringer.webp";
-import Jwells from "../../../assets/Project/Jwells.webp";
-import Kploy from "../../../assets/Project/Kploy.webp";
-import NFT from "../../../assets/Project/NFT.webp";
-import Payment from "../../../assets/Project/Payment.webp";
-import Shopify from "../../../assets/Project/Shopify.webp";
-import Shopping from "../../../assets/Project/Shopping.webp";
+import Anime from "../../../assets/Project/anime.webp";
+import API from "../../../assets/Project/api.webp";
+import Drink from "../../../assets/Project/drink.webp";
+import Fashion from "../../../assets/Project/fashion.webp";
+import Jewll from "../../../assets/Project/jewll.webp";
+import Jobringer from "../../../assets/Project/jobringer.webp";
+import Jwells from "../../../assets/Project/jwells.webp";
+import Kploy from "../../../assets/Project/kploy.webp";
+import NFT from "../../../assets/Project/nft.webp";
+import Payment from "../../../assets/Project/payment.webp";
+import Shopify from "../../../assets/Project/shopify.webp";
+import Shopping from "../../../assets/Project/shopping.webp";
 
 const DesignProjects = () => {
   const [selectedImage, setSelectedImage] = useState(null);
