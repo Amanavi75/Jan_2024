@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Blackbutton from "./elements/BlackButton"
+import BlackButton from "./elements/BlackButton"
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(true);
@@ -85,7 +85,7 @@ const Navbar = () => {
 
             <div className="hidden md:flex">
               <Link to="/contact" className="buttonsmall">
-                <Blackbutton text1="Contact" text2="pro" />
+                <BlackButton text1="Contact" text2="pro" />
               </Link>
             </div>
           </div>

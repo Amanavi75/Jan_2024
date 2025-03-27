@@ -1,13 +1,10 @@
 import React from "react";
 
-const Blackbutton = (props) => {
+const BlackButton = (props) => {
   const { text1, text2 = "text" } = props; // Set default value for text2
 
   return (
     //hello button
-    <div>
-
-    
     <div className="bg-black rounded-lg max-w-fit flex items-center justify-center gap-2 p-2 px-4">
       <p className="text-white">{text1}</p>
       {text2 !== "text" && (
@@ -16,9 +13,8 @@ const Blackbutton = (props) => {
         </div>
       )}
     </div>
-    </div>
   );
 };
 
-export default Blackbutton;
+export default BlackButton;
 
