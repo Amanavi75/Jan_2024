@@ -46,7 +46,7 @@ const CaseStudy = () => {
       categories: ["Design", "Branding"],
       image: Raikar,
       locked: false,
-      link: "/raikar",
+      link: "/Projects/Raikar",
     },
   ];
 

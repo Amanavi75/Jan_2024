@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "/projects", text: "Projects" },
-    { to: "/blog", text: "Blog" },
+    // { to: "/blog", text: "Blog" },
     { to: "/Resource", text: "Resource" },
     { to: "/resume", text: "Resume" },
   ];

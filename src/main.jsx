@@ -65,8 +65,8 @@ root.render(
         <Route path="/projects" element={<Projects />} />
         <Route path="/resource" element={<Resource />} />
         <Route path="shyftlabs" element={<Shyftlabs />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="/Projects/RaikarsGoodVibes" element={<RaikarGoodVibes />} />
+        {/* <Route path="blog" element={<Blog />} /> */}
+        <Route path="/Projects/Raikar" element={<RaikarGoodVibes />} />
       </Routes>
     </Router>
   </div>
