@@ -1,98 +1,126 @@
 import React from "react";
-import CareerDSL from "../../../assets/CarterDSL/Carterdls.png";
-import Navbar from "../../Navbar";
-import Footer from "../../Footer";
-export default function CampaignCreation() {
+import CarterImg from "../../../assets/CarterDSL/Carterdls.png";
+
+
+const CartereDSL = () => {
   return (
-    <div>
-      <Navbar />
-    <img src={CareerDSL} alt="mockup"></img>
-    <div className="bg-white text-black min-h-screen p-8">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-semibold mb-2">Campaign Creation</h1>
-        <p className="text-md mb-4">
-          Enabling brands (publishers) and advertisers to design, launch, and
-          manage targeted ad campaigns within the Carter platform.
-        </p>
-        <div className="flex flex-wrap gap-2 mb-6">
-          {["B2B", "SaaS", "Ad Tech", "Design System"].map((tag) => (
-            <span
-              key={tag}
-              className="bg-gray-200 text-black py-1 px-4 rounded-md text-sm font-medium"
-            >
-              {tag}
-            </span>
-          ))}
+    <div className="bg-black text-white px-6 py-32">
+      <div className="max-w-6xl mx-auto space-y-28">
+
+        {/* Header */}
+        <div className="text-center space-y-4">
+          <div className="inline-flex items-center gap-2 text-sm bg-white/5 border border-white/10 backdrop-blur px-4 py-1 rounded-full">
+            ◎ Carter 2.0
+          </div>
+          <h1 className="text-5xl font-light">
+            Platform <span className="text-gray-400 font-medium">Redesign</span>
+          </h1>
+          <p className="text-sm text-gray-400 max-w-2xl mx-auto">
+            Carter is a retail media platform empowering retailers to monetize digital properties through targeted, data-driven ad placements using first-party data.
+          </p>
         </div>
-        <p className="text-md mb-8">
-          The Campaign Creation Flow was designed to provide advertisers with an
-          intuitive and efficient way to set up, manage, and optimise their ad
-          campaigns.
-        </p>
-        <p className="text-xl font-semibold">Users goal:</p>
-        <p className="text-md mb-8">
-           Enhance targeting, and improve campaign
-          performance
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm mb-12">
+
+        {/* Project Info */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-gray-400">
           <div>
-            <h2 className="uppercase font-bold text-gray-600 mb-1">Company:</h2>
+            <p className="text-white font-semibold">Company</p>
             <p>Shyftlabs</p>
           </div>
           <div>
-            <h2 className="uppercase font-bold text-gray-600 mb-1">Role:</h2>
-            <p>Lead Designer</p>
+            <p className="text-white font-semibold">Role</p>
+            <p>Lead Product Designer</p>
           </div>
           <div>
-            <h2 className="uppercase font-bold text-gray-600 mb-1">Platform:</h2>
-            <p>Desktop, Web (Responsive)</p>
+            <p className="text-white font-semibold">Platform</p>
+            <p>Web (Responsive)</p>
           </div>
           <div>
-            <h2 className="uppercase font-bold text-gray-600 mb-1">Key Contributions:</h2>
-            <p>
-              Led the design from concept to launch, including UX strategy, UI
-              design, and design system creation.
-            </p>
+            <p className="text-white font-semibold">Contributions</p>
+            <p>UX Strategy, UI Design, Design System</p>
           </div>
         </div>
 
-        <div className="mb-2">
-          <h2 className="uppercase font-semibold text-gray-600 mb-6">Key Features</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Problem */}
+        <div className="space-y-4 border border-white/10 bg-white/5 backdrop-blur-md p-10 rounded-2xl">
+          <h2 className="text-3xl font-semibold">Problem</h2>
+          <p className="text-sm text-gray-400">
+            Usability gaps and visual inconsistencies hindered Carter’s ability to secure clients, with outdated UI making demos underwhelming and impacting conversion rates.
+          </p>
+        </div>
+
+        {/* Solution */}
+        <div className="space-y-6 border border-white/10 bg-white/5 backdrop-blur-md p-10 rounded-2xl">
+          <h2 className="text-3xl font-semibold">Solution</h2>
+          <p className="text-sm text-gray-400">
+            Applying Jakob’s Law and the Aesthetic-Usability Effect, we rebuilt the platform with a component-based design system prioritizing usability, scalability, and accessibility.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
             <div>
-              <h3 className="text-lg font-semibold mb-1">Campaign Configurations</h3>
-              <p className="mb-2">Define objectives, budgets, and timelines.</p>
-
-              <h3 className="text-lg font-bosemiboldld mb-1">Audience Targeting</h3>
-              <p className="mb-2">
-                Select audience segments based on demographics, behaviour, and
-                intent.
+              <h3 className="text-xl font-semibold text-white">1. Unified Visual Language</h3>
+              <p className="text-sm text-gray-400">
+                Created cohesive design rules including colors, typography, spacing, and UI patterns.
               </p>
-
-              <h3 className="text-lg font-semibold mb-1">Review & Launch</h3>
-              <p className="mb-2">Define objectives, budgets, and timelines.</p>
             </div>
-
             <div>
-              <h3 className="text-lg font-semibold mb-1">Creative Management</h3>
-              <p className="mb-2">
-                Upload ad assets, write copy, and preview placements.
+              <h3 className="text-xl font-semibold text-white">2. Modular Components</h3>
+              <p className="text-sm text-gray-400">
+                Introduced reusable, responsive components reducing rework and boosting dev speed.
               </p>
-
-              <h3 className="text-lg font-semibold mb-1">Budget & Bidding</h3>
-              <p className="mb-2">Define objectives, budgets, and timelines.</p>
-
-              <h3 className="text-lg font-semibold mb-1">Performance Tracking</h3>
-              <p className="mb-1 italic">
-                Propose real-time insights with AI,
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-white">3. Accessibility Compliance</h3>
+              <p className="text-sm text-gray-400">
+                Built WCAG 2.1 compliant interfaces with accessible colors, focus states, and labels.
               </p>
-              <p className="mb-2">optimise ads, and generate reports.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-white">4. Scalable Architecture</h3>
+              <p className="text-sm text-gray-400">
+                Designed to accommodate growth, permissions, multi-user roles, and future features.
+              </p>
             </div>
           </div>
         </div>
+
+        {/* Impact */}
+        <div className="space-y-6 border border-white/10 bg-white/5 backdrop-blur-md p-10 rounded-2xl">
+          <h2 className="text-3xl font-semibold">Impact</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4 text-sm text-gray-400">
+            <div>
+              <p className="text-3xl font-bold text-white">300%</p>
+              <p>Increase in clients onboarded (1 to 4 in one year)</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-white">50%</p>
+              <p>Faster design + development with design system</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-white">40%</p>
+              <p>Improved retention and product usage</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-white">∞</p>
+              <p>Infrastructure built for future growth</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer CTA */}
+        <div className="text-center space-y-4">
+          <h3 className="text-2xl font-semibold">Let’s Create Impact Together</h3>
+          <p className="text-sm text-gray-400">Available for collaborations, projects, or conversations.</p>
+          <a
+            href="/contact"
+            className="inline-block px-6 py-2 text-sm font-medium text-black bg-white rounded-full hover:opacity-90 transition"
+          >
+            Get in Touch →
+          </a>
+        </div>
+
       </div>
     </div>
-    <Footer />
-    </div>
   );
-}
+};
+
+export default CartereDSL;

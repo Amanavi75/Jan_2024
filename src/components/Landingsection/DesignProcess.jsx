@@ -41,40 +41,41 @@ export const DesignProcess = () => {
   ];
 
   return (
-    <section className="bg-black py-32 px-6">
-      <div className="max-w-6xl mx-auto grid gap-20 sm:grid-cols-12">
-        {/* Left Title Section */}
-        <div className="col-span-12 sm:col-span-3">
-          <div className="inline-flex items-center gap-2 text-sm bg-white/5 text-white px-4 py-1 rounded-full border border-white/10 backdrop-blur-md mb-4">
-            ⭘ Design process
-          </div>
-          <h1 className="text-4xl font-light text-white">
-            My <span className="font-medium text-gray-400">Approach</span>
-          </h1>
-          <p className="text-sm text-gray-400 mt-4">
-            A step-by-step journey I follow to translate ideas into user-first designs.
-          </p>
+    <section className="bg-black py-32 px-6 overflow-hidden">
+    <div className="max-w-6xl mx-auto grid gap-20 lg:grid-cols-12">
+      {/* Left Title Section */}
+      <div className="col-span-12 lg:col-span-4">
+        <div className="inline-flex items-center gap-2 text-sm bg-white/5 text-white px-4 py-1 rounded-full border border-white/10 backdrop-blur-md mb-4">
+          ⭘ Design process
         </div>
-
-        {/* Right Timeline */}
-        <div className="col-span-12 sm:col-span-6 space-y-10 relative">
-          <div className="before:absolute before:top-0 before:bottom-0 before:left-4 sm:before:left-[21px] before:w-0.5 before:bg-white/10 before:backdrop-blur-sm">
-            {timelineData.map((item, index) => (
-              <div key={index} className="relative flex flex-col pl-10 sm:pl-12">
-                <div className="absolute top-0 left-4 sm:left-4 w-3 h-3 rounded-full bg-white shadow-md" />
-                <time className="text-xs tracking-wide uppercase text-gray-400">
-                  {item.step}
-                </time>
-                <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-5 mt-2 shadow-sm transition-all">
-                  <h3 className="text-md font-semibold text-white">{item.title}</h3>
-                  <p className="text-sm text-gray-400 mt-2">{item.description}</p>
-                </div>
+        <h1 className="text-4xl font-light text-white">
+          My <span className="font-medium text-gray-400">Approach</span>
+        </h1>
+        <p className="text-sm text-gray-400 mt-4 max-w-sm">
+          A step-by-step journey I follow to translate ideas into user-first designs.
+        </p>
+      </div>
+  
+      {/* Right Timeline */}
+      <div className="col-span-12 lg:col-span-8 relative space-y-10">
+        <div className="before:absolute before:top-0 before:bottom-0 before:left-4 lg:before:left-[21px] before:w-0.5 before:bg-white/10 before:backdrop-blur-sm">
+          {timelineData.map((item, index) => (
+            <div key={index} className="relative flex flex-col pl-10 sm:pl-12 break-words">
+              <div className="absolute top-0 left-4 w-3 h-3 rounded-full bg-white shadow-md" />
+              <time className="text-xs tracking-wide uppercase text-gray-400">
+                {item.step}
+              </time>
+              <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-5 mt-2 shadow-sm">
+                <h3 className="text-md font-semibold text-white">{item.title}</h3>
+                <p className="text-sm text-gray-400 mt-2">{item.description}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
   );
 };
 
