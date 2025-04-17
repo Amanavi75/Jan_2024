@@ -41,7 +41,7 @@ export const DesignProcess = () => {
   ];
 
   return (
-    <section className="bg-black py-32 px-6 overflow-hidden">
+    <section className="bg-black py-32 px-6 overflow-hidden pb-0">
       <div className="max-w-6xl mx-auto grid gap-20 lg:grid-cols-12">
         {/* Left Title Section */}
         <div className="col-span-12 lg:col-span-4">
@@ -80,11 +80,6 @@ export const DesignProcess = () => {
             ))}
           </div>
         </div>
-        Optional Enhancements: Add sm:text-[15px] to text for better legibility
-        on smaller screens. Wrap the entire timeline section in a div with
-        overflow-x-hidden or overflow-auto if any edge-cutting occurs. Let me
-        know if you want this turned into a horizontally scrollable timeline for
-        mobile too.
       </div>
     </section>
   );
