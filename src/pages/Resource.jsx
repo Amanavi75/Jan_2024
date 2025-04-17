@@ -31,78 +31,38 @@ const designsystem = [
     image: IBM,
     link: "https://www.ibm.com/design/language/",
   },
-  {
-    id: 3,
-    name: "IBM Design Language",
-    description:
-      "IBM’s design language offers principles, components, and guidelines to create consistent experiences across IBM products and platforms.",
-    image: IBM,
-    link: "https://www.ibm.com/design/language/",
-  },
-  {
-    id: 3,
-    name: "IBM Design Language",
-    description:
-      "IBM’s design language offers principles, components, and guidelines to create consistent experiences across IBM products and platforms.",
-    image: IBM,
-    link: "https://www.ibm.com/design/language/",
-  },
-  {
-    id: 3,
-    name: "IBM Design Language",
-    description:
-      "IBM’s design language offers principles, components, and guidelines to create consistent experiences across IBM products and platforms.",
-    image: IBM,
-    link: "https://www.ibm.com/design/language/",
-  },
 ];
 
 const Resource = () => {
   return (
-    <div className="container__wrapper">
-      <div className="max-w-7xl mx-auto">
-        <Navbar />
-        <div className="px-4 md:px-12 pt-32">
-          <p className="text-2xl md:text-3xl font-semibold text-gray-900 text-center">
-            Design Systems
-          </p>
-          <h2 className="text-sm md:text-md font-regular text-center text-gray-600 py-2 pb-10">
-            Crafting intuitive, accessible, and visually compelling designs.
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {designsystem.map((item) => (
-              <Link key={item.id} to={item.link} target="_blank">
-                <div className="p-6 rounded-lg ">
-                  <img className="mb-4 h-12" src={item.image} alt={item.name} />
-                  <p className="text-lg font-semibold mb-3">{item.name}</p>
-                  <p className="text-sm text-gray-600 mb-5">{item.description}</p>
-                  <Underlinebutton text1="Click to visit" />
-                </div>
-              </Link>
-            ))}
+    <div className="container__wrapper bg-black text-white min-h-screen pb-32">
+      <Navbar />
+      <div className="max-w-7xl mx-auto px-4 md:px-12 pt-40">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 text-sm bg-white/5 border border-white/10 backdrop-blur px-4 py-1 rounded-full mb-4">
+            ◎ Design Resources
           </div>
+          <h1 className="text-4xl font-light">
+            Curated <span className="font-medium text-gray-400">Systems</span>
+          </h1>
+          <p className="text-sm text-gray-400 mt-2 max-w-xl mx-auto">
+            Explore foundational design systems from industry leaders to guide your own product ecosystems.
+          </p>
         </div>
-        <div className="px-4 md:px-12 pt-28">
-          <p className="text-2xl md:text-3xl font-semibold text-gray-900 text-center">
-            Design Systems
-          </p>
-          <h2 className="text-sm md:text-md font-regular text-center text-gray-600 py-2 pb-10">
-            Crafting intuitive, accessible, and visually compelling designs.
-          </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {designsystem.map((item) => (
-              <Link key={item.id} to={item.link} target="_blank">
-                <div className="p-6 rounded-lg ">
-                  <img className="mb-4 h-12" src={item.image} alt={item.name} />
-                  <p className="text-lg font-semibold mb-3">{item.name}</p>
-                  <p className="text-sm text-gray-600 mb-5">{item.description}</p>
-                  <Underlinebutton text1="Click to visit" />
-                </div>
-              </Link>
-            ))}
-          </div>
+        {/* Grid of Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {designsystem.map((item) => (
+            <Link key={item.id} to={item.link} target="_blank">
+              <div className="p-6 h-full bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md shadow-sm hover:shadow-md transition-all">
+                <img className="mb-4 h-12 w-auto" src={item.image} alt={item.name} />
+                <h2 className="text-lg font-semibold mb-2 text-white">{item.name}</h2>
+                <p className="text-sm text-gray-400 mb-5">{item.description}</p>
+                <Underlinebutton text1="Click to visit" />
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

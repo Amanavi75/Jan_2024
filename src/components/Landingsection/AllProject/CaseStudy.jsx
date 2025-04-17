@@ -72,10 +72,15 @@ const CaseStudy = () => {
 
   return (
     <div>
-      <div className="text-center pt-40 px-4">
-        <h1 className="text-2xl font-medium text-gray-800">My Case Study</h1>
-        <p className="text-sm text-gray-500 mt-2">
-          I have displayed some of my projects below. Some are locked and some are open to the public.
+      <div className="text-center pt-32">
+        <div className="inline-flex items-center gap-2 text-sm bg-white/5 border border-white/10 backdrop-blur px-4 py-1 rounded-full mb-4 text-white">
+          ◎ My Case Study
+        </div>
+        <h1 className="text-4xl font-light text-white">
+          Visual <span className="text-gray-400 font-medium">Showcase</span>
+        </h1>
+        <p className="text-sm text-gray-400 mt-2">
+          A curated selection of design explorations and experiments.
         </p>
       </div>
 
