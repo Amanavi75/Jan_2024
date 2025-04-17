@@ -68,7 +68,7 @@ export const DesignProcess = () => {
                 <time className="text-xs tracking-wide uppercase text-gray-400">
                   {item.step}
                 </time>
-                <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-5 mt-2 shadow-sm transition-all w-3/12 sm:w-5/12 md:w-7/12 lg:w-full lg:max-w-full ">
+                <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-5 mt-2 shadow-sm transition-all w-4/12 sm:w-6/12 md:w-7/12 lg:w-full lg:max-w-full ">
                   <h3 className="text-md font-semibold text-white leading-snug break-words">
                     {item.title}
                   </h3>
