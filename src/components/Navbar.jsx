@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import BlackButton from "./elements/BlackButton"
+import BlackButton from "./elements/BlackButton";
+import { Sparkles } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(true);
@@ -10,7 +11,10 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setIsScrolled(prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0);
+      setIsScrolled(
+        prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 0
+      );
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -18,11 +22,8 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-
   const navLinks = [
     { to: "/projects", text: "Projects" },
-    // { to: "/blog", text: "Blog" },
     { to: "/Resource", text: "Resource" },
     { to: "/resume", text: "Resume" },
   ];
@@ -32,8 +33,10 @@ const Navbar = () => {
       <NavLink
         key={to}
         to={to}
-        className={({ isActive, isPending }) =>
-          `${isPending ? "pending" : isActive ? "font-regular text-gray-900" : "font-regular hover:text-gray-700"} ${extraClasses}`
+        className={({ isActive }) =>
+          isActive
+            ? `text-white ${extraClasses}`
+            : `text-gray-400 hover:text-white transition ${extraClasses}`
         }
       >
         {text}
@@ -43,53 +46,72 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <div
-        className={`fixed w-full mx-auto max-w-7xl transition-transform duration-300 z-40 ${
+        className={`fixed top-6 z-50 w-[90%] max-w-4xl transition-transform duration-300 ${
           isScrolled ? "translate-y-0" : "-translate-y-24"
         }`}
       >
-        <header className="w-full  bg-white shadow-sm rounded-xl mt-4 fixed">
-          <div className=" flex flex-col md:flex-row justify-between items-center mx-auto py-3 px-8">
-            <div className="flex gap-12 md:gap-40 items-center">
-              <Link to="/" className="text-xl font-Semibold text-gray-900"> 
-                Suman &nbsp;<span className="font-normal">Sourabh</span>
-              </Link>
-              <button
-                className="md:hidden text-gray-900 hover:bg-gray-200 p-2 rounded focus:outline-none"
-                onClick={toggleMenu}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
-
-            <nav className="hidden md:flex items-center gap-8">{renderNavLinks()}</nav>
-
-            {isMenuOpen && (
-              <div className="md:hidden flex flex-col items-center pt-2 pb-4 space-y-1 bg-white">
-                {renderNavLinks("block")}
-                <NavLink
-                  to="/contact"
-                  className="px-4 py-2 text-xs font-bold text-white bg-[#e76e50] rounded shadow hover:bg-gray-700 transition-transform transform hover:scale-105"
-                >
-                  Contact
-                </NavLink>
-              </div>
-            )}
-
-            <div className="hidden md:flex">
-              <Link to="/contact" className="buttonsmall">
-                <BlackButton text1="Contact" text2="pro" />
-              </Link>
-            </div>
+        <header className="flex items-center justify-between px-6 py-2 bg-black/50 backdrop-blur-md border border-white/15 rounded-full shadow-md">
+          {/* Left: Logo */}
+          <div className="flex items-center gap-4">
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-white font-medium text-base"
+            >
+       <span className="w-4 h-4 rounded-full bg-gradient-to-br from-white to-gray-500 flex items-center justify-center text-black text-sm font-bold">
+          ⬤
+        </span>
+              Suman Sourabh
+            </Link>
           </div>
+
+          {/* Middle: Nav Links */}
+          <nav className="hidden md:flex gap-6 text-sm font-medium">
+            {renderNavLinks()}
+          </nav>
+
+          {/* Right: Button */}
+          <div className="hidden md:flex">
+  <Link
+    to="/contact"
+    className="flex items-center gap-2 px-4 py-1.5 text-xs font-medium text-white bg-white/10 backdrop-blur-md border border-white/10 rounded-full hover:bg-white/20 transition-all"
+  >
+    Contact
+    <span className="bg-[#d6f928] text-black px-2 py-0.5 text-[10px] rounded-md font-semibold">
+      pro
+    </span>
+  </Link>
+</div>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </header>
+
+        {/* Mobile Dropdown */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-2 p-4 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl text-white text-sm space-y-4 shadow-md">
+            {renderNavLinks("block")}
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 text-sm font-medium bg-white/10 hover:bg-white/20 px-4 py-2 rounded-md"
+            >
+              <Sparkles className="w-4 h-4" />
+              Contact
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import Shyftlabs from "./pages/Shyftlabs";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import RaikarGoodVibes from "./components/Landingsection/Casestudy/RaikarGoodVibes";
+import CartereDSL from "./components/Landingsection/Casestudy/CartereDSL";
 
 import {
   BrowserRouter as Router,
@@ -26,7 +27,7 @@ root.render(
       showSystemCursor={false}
       innerSize={16}
       outerSize={60}
-      color="0, 0, 0"
+      color="266, 266, 266"
       outerAlpha={0.1}
       innerScale={0.7}
       outerScale={2}
@@ -67,6 +68,7 @@ root.render(
         <Route path="shyftlabs" element={<Shyftlabs />} />
         {/* <Route path="blog" element={<Blog />} /> */}
         <Route path="/Projects/Raikar" element={<RaikarGoodVibes />} />
+        <Route path="/Projects/CarterDSl" element={<CartereDSL />} />
       </Routes>
     </Router>
   </div>

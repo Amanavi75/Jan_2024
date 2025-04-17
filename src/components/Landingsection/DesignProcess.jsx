@@ -4,73 +4,78 @@ export const DesignProcess = () => {
   const timelineData = [
     {
       title: "Discovery Problem Statement",
-      date: "Step 1",
-      description: "What is the core requirement of the product? What is the core requirement of the product?",
+      step: "Step 1",
+      description:
+        "Understanding the product's purpose, pain points, and core requirements from both business and user perspectives.",
     },
     {
-      title: "Discovery Problem Statement",
-      date: "Step 2",
-      description: "What is the core requirement of the product?",
+      title: "Research & Analysis",
+      step: "Step 2",
+      description:
+        "Conducting competitor audits, surveys, and stakeholder interviews to gather insights and validate assumptions.",
     },
     {
-      title: "Discovery Problem Statement",
-      date: "Step 3",
-      description: "What is the core requirement of the product?",
+      title: "Wireframing & User Flows",
+      step: "Step 3",
+      description:
+        "Designing wireframes and user flows that map out journeys clearly and effectively to solve real user tasks.",
     },
     {
-      title: "Discovery Problem Statement",
-      date: "Step 4",
-      description: "What is the core requirement of the product?",
+      title: "UI Design & Visual Systems",
+      step: "Step 4",
+      description:
+        "Creating consistent, pixel-perfect interfaces that are beautiful, functional, and on-brand.",
     },
     {
-      title: "Discovery Problem Statement",
-      date: "Step 5",
-      description: "What is the core requirement of the product?",
+      title: "Prototyping & Testing",
+      step: "Step 5",
+      description:
+        "Building interactive prototypes and conducting usability tests to validate interactions and flow.",
     },
     {
-      title: "Discovery Problem Statement",
-      date: "Step 6",
-      description: "What is the core requirement of the product?",
+      title: "Handoff & Optimization",
+      step: "Step 6",
+      description:
+        "Collaborating with developers for implementation and continuously optimizing based on feedback and analytics.",
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-6 dark:text-gray-800">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid gap-40 sm:grid-cols-12">
-          <div className="col-span-12 sm:col-span-3">
-            <h1 className="text-2xl font-medium text-gray-800">
-              He was definitely the person who
-            </h1>
-            <p className="text-sm text-gray-500 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              cursus, elit vitae fermentum.
-            </p>
+    <section className="bg-black py-32 px-6">
+      <div className="max-w-6xl mx-auto grid gap-20 sm:grid-cols-12">
+        {/* Left Title Section */}
+        <div className="col-span-12 sm:col-span-3">
+          <div className="inline-flex items-center gap-2 text-sm bg-white/5 text-white px-4 py-1 rounded-full border border-white/10 backdrop-blur-md mb-4">
+            ⭘ Design process
           </div>
+          <h1 className="text-4xl font-light text-white">
+            My <span className="font-medium text-gray-400">Approach</span>
+          </h1>
+          <p className="text-sm text-gray-400 mt-4">
+            A step-by-step journey I follow to translate ideas into user-first designs.
+          </p>
+        </div>
 
-          <div className="col-span-12 sm:col-span-6 space-y-10 relative">
-            <div className="before:absolute before:top-0 before:bottom-0 before:left-4 before:w-0.5 before:bg-gray-300 sm:before:left-[21px]">
-              {timelineData.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative flex flex-col pl-10 sm:pl-12"
-                >
-                  <div className="absolute top-0 left-4 w-3 h-3 rounded-full bg-black sm:left-4"></div>
-                  <time className="text-xs tracking-wide uppercase text-gray-500">
-                    {item.date}
-                  </time>
-                  <h3 className="text-md font-medium tracking-wide text-gray-800">
-                    {item.title}
-                  </h3>
-
-                  <p className="mb-8 text-sm font-regular text-gray-500 ">{item.description}</p>
+        {/* Right Timeline */}
+        <div className="col-span-12 sm:col-span-6 space-y-10 relative">
+          <div className="before:absolute before:top-0 before:bottom-0 before:left-4 sm:before:left-[21px] before:w-0.5 before:bg-white/10 before:backdrop-blur-sm">
+            {timelineData.map((item, index) => (
+              <div key={index} className="relative flex flex-col pl-10 sm:pl-12">
+                <div className="absolute top-0 left-4 sm:left-4 w-3 h-3 rounded-full bg-white shadow-md" />
+                <time className="text-xs tracking-wide uppercase text-gray-400">
+                  {item.step}
+                </time>
+                <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-5 mt-2 shadow-sm transition-all">
+                  <h3 className="text-md font-semibold text-white">{item.title}</h3>
+                  <p className="text-sm text-gray-400 mt-2">{item.description}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 export default DesignProcess;

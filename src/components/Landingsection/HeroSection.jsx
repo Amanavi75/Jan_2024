@@ -1,22 +1,52 @@
 import React from "react";
+import { ArrowUpRight, CircleDot } from "lucide-react";
 import BlackButton from "../elements/BlackButton";
 import OutlineButton from "../elements/OutlineButton";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="container__wrapper pt-72 max-w-screen-md w-max-[400px] ">
-        <h1 className="text-4xl font-medium text-gray-900">
-          Hello, I'm Suman Sourabh
+    <div className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-black">
+      <div className="max-w-6xl w-full">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 backdrop-blur-md text-white rounded-full text-sm mb-6">
+          <CircleDot size={14} />
+          UI/UX & Product Designer
+        </div>
+
+        {/* Title */}
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white">
+          Suman <span className="font-medium text-gray-300">Sourabh</span>
+          <span className="inline-block align-middle ml-2">
+            <ArrowUpRight className="w-6 h-6 inline-block" />
+          </span>
         </h1>
-        <h2 className="text-md font-regular text-gray-900 py-4">
-          Crafting intuitive, accessible, and visually compelling interfaces
-          that not only meet but exceed user expectations—because your digital
-          presence deserves more than just a good design
-        </h2>
-        <div className="flex gap-4">
-          <BlackButton text1="View Projects" />
-          <OutlineButton text1="View Blog" />
+
+        {/* Subtitle */}
+        <p className="mt-6 text-base sm:text-lg text-gray-400 max-w-2xl">
+          I craft intuitive, accessible, and visually compelling user experiences
+          for web and product interfaces that drive engagement and growth.
+          Let’s turn ideas into stunning digital realities!
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <BlackButton text1="Contact Now" />
+          <OutlineButton text1="See All Projects" />
+        </div>
+
+        {/* Floating Testimonials */}
+        <div className="hidden md:block absolute top-48 right-60 transform rotate-[-8deg] w-64 backdrop-blur-md bg-white/5 border border-white/10 text-white p-4 rounded-xl shadow-lg">
+          <p className="text-sm">
+            " Collaborating with Suman completely elevated our product design! "
+          </p>
+          <p className="text-right text-sm mt-2 text-gray-400">- pranavnb</p>
+        </div>
+
+        <div className="hidden md:block absolute bottom-60 right-60 transform rotate-[4deg] w-64 backdrop-blur-md bg-white/5 border border-white/10 text-white p-4 rounded-xl shadow-lg">
+          <p className="text-sm">
+            " Our user retention improved by 150% thanks to Suman's UI revamp. "
+          </p>
+          <p className="text-right text-sm mt-2 text-gray-400">- vijaynb</p>
         </div>
       </div>
     </div>

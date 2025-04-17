@@ -5,7 +5,7 @@ import Drink from "../../assets/Project/drink.webp";
 import Health from "../../assets/Project/health.webp";
 import Fashion from "../../assets/Project/fashion.webp";
 import Glamor from "../../assets/Project/glamor.webp";
-import Jewll from "../../assets/Project/jewll.webp"; // Fixed Import Name
+import Jewll from "../../assets/Project/jewll.webp";
 import Jobringer from "../../assets/Project/jobringer.webp";
 import Jwells from "../../assets/Project/jwells.webp";
 import Kploy from "../../assets/Project/kploy.webp";
@@ -23,17 +23,23 @@ const images = [
 
 const Projects = () => {
   return (
-    <div className="py-36  mx-auto overflow-hidden">
+    <div className="py-36 mx-auto overflow-hidden bg-black">
       <div className="w-full inline-flex flex-nowrap">
         {[...Array(2)].map((_, index) => (
           <ul
             key={index}
-            className="flex items-center justify-center md:justify-start [&_li]:mx-6 [&_img]:max-w-[340px] animate-infinite-scroll"
+            className="flex items-center justify-center md:justify-start [&_li]:mx-6 animate-infinite-scroll"
             aria-hidden={index === 1}
           >
             {images.map((src, i) => (
               <li key={i}>
-                <img className="h-60 w-150 max-w-full rounded-lg outline outline-8 outline-white" src={src} alt={`Project ${i + 1}`} />
+                <div className="h-60 w-[340px] bg-white/5 border-2 border-white/20 backdrop-blur-md rounded-xl overflow-hidden shadow-md">
+                  <img
+                    src={src}
+                    alt={`Project ${i + 1}`}
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
               </li>
             ))}
           </ul>

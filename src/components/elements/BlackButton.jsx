@@ -1,15 +1,13 @@
 import React from "react";
 
-const BlackButton = (props) => {
-  const { text1, text2 = "text" } = props; // Set default value for text2
-
+const BlackButton = ({ text1, text2 = "" }) => {
   return (
-    //hello button
-    <div className="bg-black rounded-lg max-w-fit flex items-center justify-center gap-2 p-2 px-4">
-      <p className="text-white">{text1}</p>
-      {text2 !== "text" && (
-        <div className="bg-[#d6f928] rounded-md p-0.5 px-2 text-sm font-medium">
-          <p className="text-black">{text2}</p>
+    <div className="flex items-center gap-2 max-w-fit px-5 py-2 rounded-full bg-white text-black hover:bg-gray-100 border border-white/10 transition-all cursor-pointer">
+      <p className="text-sm font-medium">{text1}</p>
+
+      {text2 && (
+        <div className="bg-[#d6f928] text-black text-xs font-semibold rounded-md px-2 py-0.5">
+          {text2}
         </div>
       )}
     </div>
@@ -17,4 +15,3 @@ const BlackButton = (props) => {
 };
 
 export default BlackButton;
-
