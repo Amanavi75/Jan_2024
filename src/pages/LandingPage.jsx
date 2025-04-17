@@ -10,23 +10,38 @@ import Projects from "../components/Landingsection/Projects";
 import Skills from "../components/Landingsection/Skills";
 import Testimonial from "../components/Landingsection/Testimonial";
 import Tools from "../components/Landingsection/Tools";
+import Navbar from "../components/Navbar";
+import bg from "../assets/Img/bg.png";
+
 const LandingPage = () => {
   return (
-    <div className="container__wrapper pt-20 ">
-      <div className="">
+    <>
+      {/* Hero + Navbar Section with Background */}
+      <div
+        className="relative bg-cover bg-no-repeat bg-center min-h-screen"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        <Navbar />
         <HeroSection />
-        <Projects />
-        <DesignServices/>
-        <Tools />
-        <Testimonial />
-        <Skills />
-        <Experience />
-        <DoubleDiamond/>
-        <DesignProcess/>
-        <Faq/>
-        <Footer/>
       </div>
-    </div>
+
+      {/* Rest of the page */}
+      <Projects />
+      <DesignServices />
+      <Tools />
+      <Testimonial />
+      <Skills />
+      <Experience />
+      <DoubleDiamond />
+      <DesignProcess />
+      <Faq />
+      <Footer />
+    </>
   );
 };
 

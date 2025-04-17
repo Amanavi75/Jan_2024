@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  LayoutDashboard,
-  Image,
-  Frame,
-  Palette
-} from "lucide-react";
+import { LayoutDashboard, Image, Frame, Palette } from "lucide-react";
 
 import websiteImage from "../../assets/Project/anime.webp";
 import framerImage from "../../assets/Project/api.webp";
@@ -28,27 +23,23 @@ const DesignServices = () => {
     {
       icon: <LayoutDashboard size={16} />,
       title: "Website Design",
-      desc:
-        "Designing breathtaking, user-centric websites that boost engagement, conversions, and growth, perfectly aligned with your brand.",
+      desc: "Designing breathtaking, user-centric websites that boost engagement, conversions, and growth, perfectly aligned with your brand.",
       image: websiteImage,
     },
     {
       icon: <Image size={16} />,
       title: "Logo Design",
-      desc:
-        "Crafting distinctive, scalable, and impactful logos that embody your brand’s identity and vision.",
+      desc: "Crafting distinctive, scalable, and impactful logos that embody your brand’s identity and vision.",
     },
     {
       icon: <Palette size={16} />,
       title: "Graphic Design",
-      desc:
-        "Crafting bold, engaging, and versatile graphic designs that elevate your brand and captivate your audience.",
+      desc: "Crafting bold, engaging, and versatile graphic designs that elevate your brand and captivate your audience.",
     },
     {
       icon: <Frame size={16} />,
       title: "Framer Design",
-      desc:
-        "Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience.",
+      desc: "Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience.",
       image: framerImage,
     },
   ];
@@ -63,8 +54,7 @@ const DesignServices = () => {
               <span className="text-gray-400">◎</span> Design services
             </div>
             <h1 className="text-4xl font-light">
-              Design{" "}
-              <span className="font-medium text-gray-400">Services</span>
+              Design <span className="font-medium text-gray-400">Services</span>
             </h1>
             <p className="text-gray-400 mt-2 text-sm max-w-md">
               Explore a suite of design services to elevate your brand.
@@ -79,27 +69,71 @@ const DesignServices = () => {
           </Link>
         </div>
 
-        {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
-          {cards.map((card, idx) => (
-            <div
-              key={idx}
-              className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
-            >
+          {/* LEFT COLUMN */}
+          <div className="flex flex-col gap-6">
+            {/* Website Design */}
+            <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-4 text-white">
-                {card.icon}
-                <h2 className="text-sm font-semibold">{card.title}</h2>
+                <LayoutDashboard size={16} />
+                <h2 className="text-sm font-semibold">Website Design</h2>
               </div>
-              <p className="text-sm text-gray-400 mb-4">{card.desc}</p>
-              {card.image && (
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full rounded-md object-cover"
-                />
-              )}
+              <p className="text-sm text-gray-400 mb-4">
+                Designing breathtaking, user-centric websites that boost
+                engagement, conversions, and growth, perfectly aligned with your
+                brand.
+              </p>
+              <img
+                src={websiteImage}
+                alt="Website Design"
+                className="w-full rounded-md object-cover"
+              />
             </div>
-          ))}
+
+            {/* Graphic Design */}
+            <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="flex items-center gap-2 mb-2 text-white">
+                <Palette size={16} />
+                <h2 className="text-sm font-semibold">Graphic Design</h2>
+              </div>
+              <p className="text-sm text-gray-400">
+                Crafting bold, engaging, and versatile graphic designs that
+                elevate your brand and captivate your audience.
+              </p>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="flex flex-col gap-6">
+            {/* Logo Design */}
+            <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="flex items-center gap-2 mb-2 text-white">
+                <Image size={16} />
+                <h2 className="text-sm font-semibold">Logo Design</h2>
+              </div>
+              <p className="text-sm text-gray-400">
+                Crafting distinctive, scalable, and impactful logos that embody
+                your brand’s identity and vision.
+              </p>
+            </div>
+
+            {/* Framer Design */}
+            <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="flex items-center gap-2 mb-4 text-white">
+                <Frame size={16} />
+                <h2 className="text-sm font-semibold">Framer Design</h2>
+              </div>
+              <p className="text-sm text-gray-400 mb-4">
+                Bringing ideas to life with interactive, user-centered Framer
+                designs that simplify complexity and elevate user experience.
+              </p>
+              <img
+                src={framerImage}
+                alt="Framer Design"
+                className="w-full rounded-md object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Tags */}

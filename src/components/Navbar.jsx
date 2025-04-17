@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import BlackButton from "./elements/BlackButton";
 import { Sparkles } from "lucide-react";
 
 const Navbar = () => {
@@ -12,8 +11,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setIsScrolled(
-        prevScrollPos > currentScrollPos &&
-          prevScrollPos - currentScrollPos > 0
+        prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0
       );
       setPrevScrollPos(currentScrollPos);
     };
@@ -46,20 +44,22 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <div
-        className={`fixed top-6 z-50 w-[90%] max-w-4xl transition-transform duration-300 ${
+        className={`fixed top-6 z-50 w-[90%] max-w-6xl transition-transform duration-300 ${
           isScrolled ? "translate-y-0" : "-translate-y-24"
         }`}
       >
-        <header className="flex items-center justify-between px-6 py-2 bg-black/50 backdrop-blur-md border border-white/15 rounded-full shadow-md">
+        <header className="flex items-center justify-between px-6 py-2 bg-black/30 backdrop-blur-md border border-white/10 rounded-full shadow-md">
+
+
           {/* Left: Logo */}
           <div className="flex items-center gap-4">
             <Link
               to="/"
               className="flex items-center gap-2 text-white font-medium text-base"
             >
-       <span className="w-4 h-4 rounded-full bg-gradient-to-br from-white to-gray-500 flex items-center justify-center text-black text-sm font-bold">
-          ⬤
-        </span>
+              <span className="w-4 h-4 rounded-full bg-gradient-to-br from-white to-gray-500 flex items-center justify-center text-black text-sm font-bold">
+                ⬤
+              </span>
               Suman Sourabh
             </Link>
           </div>
@@ -71,16 +71,16 @@ const Navbar = () => {
 
           {/* Right: Button */}
           <div className="hidden md:flex">
-  <Link
-    to="/contact"
-    className="flex items-center gap-2 px-4 py-1.5 text-xs font-medium text-white bg-white/10 backdrop-blur-md border border-white/10 rounded-full hover:bg-white/20 transition-all"
-  >
-    Contact
-    <span className="bg-[#d6f928] text-black px-2 py-0.5 text-[10px] rounded-md font-semibold">
-      pro
-    </span>
-  </Link>
-</div>
+            <Link
+              to="/contact"
+              className="flex items-center gap-2 px-4 py-1.5 text-xs font-medium text-white border border-white/20 rounded-full hover:bg-white/10 transition-all"
+            >
+              Contact
+              <span className="bg-[#d6f928] text-black px-2 py-0.5 text-[10px] rounded-md font-semibold">
+                pro
+              </span>
+            </Link>
+          </div>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -94,14 +94,19 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </header>
 
         {/* Mobile Dropdown */}
         {isMenuOpen && (
-          <div className="md:hidden mt-2 p-4 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl text-white text-sm space-y-4 shadow-md">
+          <div className="md:hidden mt-2 p-4 backdrop-blur-md border border-white/20 rounded-xl text-white text-sm space-y-4 shadow-md bg-transparent">
             {renderNavLinks("block")}
             <Link
               to="/contact"

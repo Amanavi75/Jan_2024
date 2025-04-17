@@ -5,8 +5,8 @@ import OutlineButton from "../elements/OutlineButton";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-6xl w-full">
+    <div className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl w-full pt-36">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 backdrop-blur-md text-white rounded-full text-sm mb-6">
           <CircleDot size={14} />
@@ -23,9 +23,9 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="mt-6 text-base sm:text-lg text-gray-400 max-w-2xl">
-          I craft intuitive, accessible, and visually compelling user experiences
-          for web and product interfaces that drive engagement and growth.
-          Let’s turn ideas into stunning digital realities!
+          I craft intuitive, accessible, and visually compelling user
+          experiences for web and product interfaces that drive engagement and
+          growth. Let’s turn ideas into stunning digital realities!
         </p>
 
         {/* CTA Buttons */}
@@ -35,14 +35,14 @@ const HeroSection = () => {
         </div>
 
         {/* Floating Testimonials */}
-        <div className="hidden md:block absolute top-48 right-60 transform rotate-[-8deg] w-64 backdrop-blur-md bg-white/5 border border-white/10 text-white p-4 rounded-xl shadow-lg">
+        <div className="hidden md:block absolute top-80 right-60 transform rotate-[-8deg] w-64 backdrop-blur-md bg-white/5 border border-white/10 text-white p-4 rounded-xl shadow-lg">
           <p className="text-sm">
             " Collaborating with Suman completely elevated our product design! "
           </p>
           <p className="text-right text-sm mt-2 text-gray-400">- pranavnb</p>
         </div>
 
-        <div className="hidden md:block absolute bottom-60 right-60 transform rotate-[4deg] w-64 backdrop-blur-md bg-white/5 border border-white/10 text-white p-4 rounded-xl shadow-lg">
+        <div className="hidden md:block absolute bottom-40 right-60 transform rotate-[4deg] w-64 backdrop-blur-md bg-white/5 border border-white/10 text-white p-4 rounded-xl shadow-lg">
           <p className="text-sm">
             " Our user retention improved by 150% thanks to Suman's UI revamp. "
           </p>

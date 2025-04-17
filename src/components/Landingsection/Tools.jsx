@@ -7,11 +7,13 @@ const Tools = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 justify-between px-6">
         {/* Left Quote */}
         <div className="md:max-w-sm">
-          <h1 className="text-2xl font-medium text-white">
-            He was definitely the person who, if commits, would deliver with
-            utmost excellence.
+          <div className="inline-flex items-center gap-2 text-sm bg-white/5 text-white px-4 py-1 rounded-full border border-white/10 backdrop-blur-md mb-4">
+            ⭘ Achievements
+          </div>
+          <h1 className="text-4xl font-light text-white">
+            Stats That <span className="font-medium text-gray-400">Speak</span>
           </h1>
-          <p className="text-sm text-gray-400 mt-2">
+          <p className="text-sm text-gray-400 mt-4">
             “Suman’s dedication and attention to detail are unmatched. He
             consistently delivers outstanding UI/UX solutions that transform
             user experiences.”
