@@ -23,7 +23,7 @@ const Navbar = () => {
   const navLinks = [
     { to: "/projects", text: "Projects" },
     { to: "/Resource", text: "Resource" },
-    { to: "/resume", text: "Resume" },
+    { to: "/resume", text: "About Me" },
   ];
 
   const renderNavLinks = (extraClasses = "") =>
