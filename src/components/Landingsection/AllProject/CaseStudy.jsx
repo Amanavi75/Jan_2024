@@ -93,33 +93,34 @@ const CaseStudy = () => {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
-            <h2 className="text-lg font-semibold mb-2">Enter Password</h2>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Password"
-            />
-            {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
-            <div className="flex justify-between mt-4">
-              <button
-                onClick={() => setShowModal(false)}
-                className="px-4 py-2 bg-gray-300 rounded-md"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={handlePasswordSubmit}
-                className="px-4 py-2 bg-blue-500 text-white rounded-md"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
+       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+       <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg w-full max-w-sm text-center">
+         <h2 className="text-xl font-semibold text-white mb-3">Enter Password</h2>
+         <input
+           type="password"
+           value={password}
+           onChange={(e) => setPassword(e.target.value)}
+           className="w-full bg-black/30 border border-white/20 text-white text-sm px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white/30 transition"
+           placeholder="••••••••"
+         />
+         {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
+     
+         <div className="flex justify-between mt-6 gap-4">
+           <button
+             onClick={() => setShowModal(false)}
+             className="w-full py-2 rounded-md bg-white/10 text-white text-sm hover:bg-white/20 transition"
+           >
+             Cancel
+           </button>
+           <button
+             onClick={handlePasswordSubmit}
+             className="w-full py-2 rounded-md bg-white text-black text-sm font-medium hover:opacity-90 transition"
+           >
+             Submit
+           </button>
+         </div>
+       </div>
+     </div>
       )}
     </div>
   );

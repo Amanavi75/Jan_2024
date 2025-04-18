@@ -11,6 +11,7 @@ import {
   Layers,
   LayoutDashboard,
 } from "lucide-react";
+import Footer from "../components/Footer";
 
 const designSystems = [
   {
@@ -142,7 +143,7 @@ const books = [
 
 const Resource = () => {
   return (
-    <div className="container__wrapper bg-black text-white min-h-screen pb-32">
+    <div className="container__wrapper bg-black text-white min-h-screen ">
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 md:px-12 pt-40">
         {/* Header */}
@@ -228,6 +229,7 @@ const Resource = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
