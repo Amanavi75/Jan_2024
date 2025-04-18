@@ -44,12 +44,12 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <div
-        className={`fixed top-6 z-50 w-[90%] max-w-6xl transition-transform duration-300 ${
-          isScrolled ? "translate-y-0" : "-translate-y-24"
-        }`}
+        className={`fixed z-50 w-full md:w-[90%] md:max-w-6xl transition-transform duration-300
+          ${isScrolled ? "translate-y-0" : "-translate-y-24"}
+          top-0 md:top-6
+        `}
       >
-        <header className="flex items-center justify-between px-6 py-2 bg-black/30 backdrop-blur-md border border-white/10 rounded-full shadow-md">
-
+        <header className="flex items-center justify-between px-6 py-2 bg-black/30 backdrop-blur-md border border-white/10 rounded-none md:rounded-full shadow-md">
 
           {/* Left: Logo */}
           <div className="flex items-center gap-4">
@@ -104,9 +104,9 @@ const Navbar = () => {
           </button>
         </header>
 
-        {/* Mobile Dropdown */}
+        {/* Mobile Dropdown responsive */}
         {isMenuOpen && (
-          <div className="md:hidden mt-2 p-4 backdrop-blur-md border border-white/20 rounded-xl text-white text-sm space-y-4 shadow-md bg-transparent">
+          <div className="md:hidden mt-2 p-4 backdrop-blur-md border border-white/20 rounded-xl text-white text-sm space-y-4 shadow-md bg-black/40">
             {renderNavLinks("block")}
             <Link
               to="/contact"
