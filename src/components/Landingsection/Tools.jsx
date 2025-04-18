@@ -1,5 +1,5 @@
 import React from "react";
-import PenIcon from "@atlaskit/icon/core/pen";
+import { Smile, Briefcase, Calendar, Mic } from "lucide-react";
 
 const Tools = () => {
   return (
@@ -25,7 +25,7 @@ const Tools = () => {
           {/* Card 1 */}
           <div className="w-40 h-60 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform">
             <div className="h-1/2 flex justify-center items-center text-white">
-              <PenIcon />
+              <Smile />
             </div>
             <div className="h-1/2 bg-white/5 border-t border-white/10">
               <div className="text-md font-semibold text-center pt-6 text-white">
@@ -41,21 +41,21 @@ const Tools = () => {
           <div className="w-40 h-60 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform">
             <div className="h-1/2 bg-white/5 border-b border-white/10">
               <div className="text-md font-semibold text-center pt-6 text-white">
-                35+
+                15+
               </div>
               <p className="text-sm text-center text-gray-400 mt-2">
-                Project Developed
+                Project Completed
               </p>
             </div>
             <div className="h-1/2 flex justify-center items-center text-white">
-              <PenIcon />
+              <Briefcase />
             </div>
           </div>
 
           {/* Card 3 */}
           <div className="w-40 h-60 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform">
             <div className="h-1/2 flex justify-center items-center text-white">
-              <PenIcon />
+              <Calendar />
             </div>
             <div className="h-1/2 bg-white/5 border-t border-white/10">
               <div className="text-md font-semibold text-center pt-6 text-white">
@@ -78,7 +78,7 @@ const Tools = () => {
               </p>
             </div>
             <div className="h-1/2 flex justify-center items-center text-white">
-              <PenIcon />
+              <Mic />
             </div>
           </div>
         </div>

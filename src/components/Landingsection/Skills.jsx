@@ -6,24 +6,24 @@ import AutomationIcon from "@atlaskit/icon/core/automation";
 
 const skills = [
   {
-    icon: <PenIcon label="UI/UX" />,
-    title: "UI/UX Designer",
-    desc: "Designing intuitive and beautiful interfaces that balance aesthetics with functionality.",
+    icon: <PenIcon label="Design Clarity" />,
+    title: "Transparent Process",
+    desc: "I walk you through every design decision—no fluff, just strategic reasoning and business logic behind every move.",
   },
   {
-    icon: <OperationsIcon label="Workshop" />,
-    title: "Workshop & Planning",
-    desc: "Leading design sprints and user-centric planning sessions for impactful outcomes.",
+    icon: <OperationsIcon label="Workflow" />,
+    title: "Collaborative from Day One",
+    desc: "I don’t just take briefs—I ask the tough questions, run design workshops, and ensure your voice is reflected in the final output.",
   },
   {
     icon: <AngleBracketsIcon label="Code" />,
-    title: "Full Stack Development",
-    desc: "From design to deployment — I build seamless user experiences end-to-end.",
+    title: "Design-Dev Harmony",
+    desc: "As someone who writes code too, I ensure designs are feasible, scalable, and production-ready—no pixel-left-behind handoffs.",
   },
   {
-    icon: <AutomationIcon label="Prototype" />,
-    title: "Prototyping & Interaction Design",
-    desc: "Creating interactive prototypes to test usability and motion design concepts.",
+    icon: <AutomationIcon label="Speed & Delivery" />,
+    title: "Speed Without Sacrificing Quality",
+    desc: "I work fast, but with precision. Expect rapid turnaround, clear updates, and deliverables you can ship with confidence.",
   },
 ];
 
@@ -34,13 +34,13 @@ const Skills = () => {
         {/* Section Header */}
         <div className="text-center max-w-xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 text-sm bg-white/5 text-white px-4 py-1 rounded-full border border-white/10 backdrop-blur-md mb-4">
-            ⭘ Core Skills
+            ⭘ Why Work With Me
           </div>
           <h1 className="text-5xl font-light text-white">
-            What <span className="text-gray-400 font-medium">I Do</span>
+            My <span className="text-gray-400 font-medium">USP</span>
           </h1>
           <p className="text-sm text-gray-400 mt-4 leading-relaxed">
-            A blend of creativity and strategy fuels my approach to crafting seamless, high-impact digital experiences.
+            I offer an honest, strategic, and design-led approach that’s hard to find elsewhere. It’s not just about good design—it’s about real results.
           </p>
         </div>
 

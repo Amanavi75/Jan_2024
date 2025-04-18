@@ -5,24 +5,45 @@ const Faq = () => {
 
   const faqData = [
     {
-      question: "How can we collaborate with you for a design project?",
+      question: "What type of projects do you specialize in?",
       answer:
-        "I’m flexible in my approach. I take on freelance projects depending on the timeline and scope. Feel free to reach out with your requirements for further discussion.",
+        "I specialize in end-to-end UI/UX design, design systems, and web development for SaaS platforms, B2B tools, and consumer-facing websites—especially projects that need clarity, scale, and clean user flows.",
     },
     {
-      question: "Do you conduct workshops or webinars on UI/UX Design?",
+      question:
+        "Can you help if we only need a design system or component library?",
       answer:
-        "Yes, I regularly host events and webinars on topics like ‘The Psychology of Colors in Design’ and ‘Intro to UI/UX’. I’m open to partnering with organizations or educational institutions for similar events.",
+        "Absolutely. I’ve led multiple design system initiatives from scratch and can help create scalable systems with detailed documentation for consistency and team efficiency.",
     },
     {
-      question: "What kind of companies or industries have you worked with?",
+      question: "Do you offer UX audit or consulting for existing products?",
       answer:
-        "I’ve worked with clients in tech, fashion, and education, including projects for startups, established companies, and even public events like webinars.",
+        "Yes. I offer UX audits with actionable insights, quick wins, and long-term strategies based on usability heuristics, user flows, and business goals.",
     },
     {
-      question: "Can we hire you for long-term collaboration or consulting?",
+      question: "Are you available for remote or on-site collaborations?",
       answer:
-        "Yes, I’m open to long-term collaborations, either as a consultant or part of your design team, depending on the project requirements.",
+        "I'm fully remote but open to hybrid engagements for workshops, design sprints, or team onboarding if the project demands it.",
+    },
+    {
+      question: "Can you handle both design and development?",
+      answer:
+        "Yes. I can take your product from Figma to a fully functional website using tools like Framer, Webflow, or coded stacks like React/Next.js—depending on what's best for the project.",
+    },
+    {
+      question: "How do we get started with you?",
+      answer:
+        "Just reach out with a short brief via the contact page. From there, I usually propose a quick discovery call, scope the work, and align on the next steps.",
+    },
+    {
+      question: "Do you work with startups or only enterprise clients?",
+      answer:
+        "Both. I’ve worked with early-stage founders, mid-scale startups, and enterprise clients like Shyftlabs. The common factor is clarity of vision and impact.",
+    },
+    {
+      question: "What makes your workflow different?",
+      answer:
+        "I balance business understanding with deep design thinking. I’m not just delivering UI—I’m solving product problems with measurable outcomes, whether that’s improved retention or faster dev handoffs.",
     },
   ];
 
@@ -40,7 +61,8 @@ const Faq = () => {
 
         {/* Title */}
         <h1 className="text-4xl font-light text-white">
-          Frequently <span className="font-medium text-gray-400">Asked</span> Questions
+          Frequently <span className="font-medium text-gray-400">Asked</span>{" "}
+          Questions
         </h1>
 
         {/* FAQ Items */}
@@ -68,7 +90,12 @@ const Faq = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M18 12H6"
+                      />
                     </svg>
                   ) : (
                     <svg
@@ -78,7 +105,12 @@ const Faq = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      />
                     </svg>
                   )}
                 </span>

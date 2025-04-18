@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import { DesignProcess } from "../components/Landingsection/DesignProcess";
 import DesignServices from "../components/Landingsection/DesignServices";
 import DoubleDiamond from "../components/Landingsection/DoubleDiamond";
-import Experience from "../components/Landingsection/Experience";
+
 import Faq from "../components/Landingsection/Faq";
 import HeroSection from "../components/Landingsection/HeroSection";
 import Projects from "../components/Landingsection/Projects";
@@ -35,10 +35,9 @@ const LandingPage = () => {
       <DesignServices />
       <Tools />
       <Testimonial />
-      <Skills />
-      <Experience />
       <DoubleDiamond />
       <DesignProcess />
+      <Skills />
       <Faq />
       <Footer />
     </>

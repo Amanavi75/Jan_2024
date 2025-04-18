@@ -84,5 +84,4 @@ export const DesignProcess = () => {
     </section>
   );
 };
-
 export default DesignProcess;

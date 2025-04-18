@@ -25,6 +25,7 @@ const Resume = () => {
             Product Designer with expertise in user-centered design, intuitive interfaces, and design systems. Proven ability to enhance customer satisfaction, streamline workflows, and deliver engaging features.
           </p>
         </section>
+      
 
         {/* Experience Section */}
         <section className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 mb-12 shadow-md">

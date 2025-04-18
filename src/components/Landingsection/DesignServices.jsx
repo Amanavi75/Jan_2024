@@ -1,47 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LayoutDashboard, Image, Frame, Palette } from "lucide-react";
+import { LayoutDashboard, UserCheck, Globe, BarChart } from "lucide-react";
 
 import websiteImage from "../../assets/Project/anime.webp";
 import framerImage from "../../assets/Project/api.webp";
 
 const DesignServices = () => {
   const features = [
-    "Framer Migration",
-    "Video & Motion Graphics",
-    "Copywriting",
-    "Posters",
-    "Custom Code",
-    "SEO",
-    "Icons",
-    "Social Media",
-    "Landing Pages",
-    "Optimization",
-  ];
-
-  const cards = [
-    {
-      icon: <LayoutDashboard size={16} />,
-      title: "Website Design",
-      desc: "Designing breathtaking, user-centric websites that boost engagement, conversions, and growth, perfectly aligned with your brand.",
-      image: websiteImage,
-    },
-    {
-      icon: <Image size={16} />,
-      title: "Logo Design",
-      desc: "Crafting distinctive, scalable, and impactful logos that embody your brand’s identity and vision.",
-    },
-    {
-      icon: <Palette size={16} />,
-      title: "Graphic Design",
-      desc: "Crafting bold, engaging, and versatile graphic designs that elevate your brand and captivate your audience.",
-    },
-    {
-      icon: <Frame size={16} />,
-      title: "Framer Design",
-      desc: "Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience.",
-      image: framerImage,
-    },
+    "UX Workshops",
+    "UI/UX Design",
+    "Design Systems",
+    "Web Design",
+    "Prototyping",
+    "User Research",
+    "Wireframing",
+    "Interaction Design",
+    "Strategy Planning",
+    "Responsive Design",
+    "Usability Testing",
+    "Accessibility Audits",
+    "Framer/Webflow/Wix/Wordpress",
+    "Visual Design",
+    "Team Facilitation",
   ];
 
   return (
@@ -57,7 +37,7 @@ const DesignServices = () => {
               Design <span className="font-medium text-gray-400">Services</span>
             </h1>
             <p className="text-gray-400 mt-2 text-sm max-w-md">
-              Explore a suite of design services to elevate your brand.
+              Explore a suite of offerings crafted to boost user experience, product clarity, and digital presence.
             </p>
           </div>
 
@@ -72,16 +52,14 @@ const DesignServices = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-6">
-            {/* Website Design */}
+            {/* UI/UX Design */}
             <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-4 text-white">
                 <LayoutDashboard size={16} />
-                <h2 className="text-sm font-semibold">Website Design</h2>
+                <h2 className="text-sm font-semibold">UI/UX Design</h2>
               </div>
               <p className="text-sm text-gray-400 mb-4">
-                Designing breathtaking, user-centric websites that boost
-                engagement, conversions, and growth, perfectly aligned with your
-                brand.
+                I create user-first interfaces that prioritize clarity, usability, and brand identity—resulting in digital products that feel intuitive and impactful.
               </p>
               <img
                 src={websiteImage}
@@ -90,46 +68,43 @@ const DesignServices = () => {
               />
             </div>
 
-            {/* Graphic Design */}
+            {/* UX Workshop Consultant */}
             <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-2 text-white">
-                <Palette size={16} />
-                <h2 className="text-sm font-semibold">Graphic Design</h2>
+                <UserCheck size={16} />
+                <h2 className="text-sm font-semibold">UX Workshop Consultant</h2>
               </div>
               <p className="text-sm text-gray-400">
-                Crafting bold, engaging, and versatile graphic designs that
-                elevate your brand and captivate your audience.
+                Facilitate hands-on design thinking workshops to align stakeholders, validate ideas, and generate strategic product insights early in the process.
               </p>
             </div>
           </div>
 
           {/* RIGHT COLUMN */}
           <div className="flex flex-col gap-6">
-            {/* Logo Design */}
+            {/* Web Designing */}
             <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-2 text-white">
-                <Image size={16} />
-                <h2 className="text-sm font-semibold">Logo Design</h2>
+                <Globe size={16} />
+                <h2 className="text-sm font-semibold">Web Designing</h2>
               </div>
               <p className="text-sm text-gray-400">
-                Crafting distinctive, scalable, and impactful logos that embody
-                your brand’s identity and vision.
+                I design and build modern, responsive websites using tools like Framer, Webflow, WordPress, and Wix—tailored to your brand and content needs.
               </p>
             </div>
 
-            {/* Framer Design */}
+            {/* Product Planning and Strategy */}
             <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-4 text-white">
-                <Frame size={16} />
-                <h2 className="text-sm font-semibold">Framer Design</h2>
+                <BarChart size={16} />
+                <h2 className="text-sm font-semibold">Product Planning & Strategy</h2>
               </div>
               <p className="text-sm text-gray-400 mb-4">
-                Bringing ideas to life with interactive, user-centered Framer
-                designs that simplify complexity and elevate user experience.
+                I help define your product roadmap, user personas, and MVP scope—ensuring your UX and business goals align from day one.
               </p>
               <img
                 src={framerImage}
-                alt="Framer Design"
+                alt="Product Strategy"
                 className="w-full rounded-md object-cover"
               />
             </div>
