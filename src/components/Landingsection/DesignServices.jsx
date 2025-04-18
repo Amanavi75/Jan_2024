@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LayoutDashboard, UserCheck, Globe, BarChart } from "lucide-react";
+import ux from "../../assets/Img/ux.png";
+import strategy from "../../assets/Img/strategy.png";
 
-import websiteImage from "../../assets/Project/anime.webp";
-import framerImage from "../../assets/Project/api.webp";
 
 const DesignServices = () => {
   const features = [
@@ -62,7 +62,7 @@ const DesignServices = () => {
                 I create user-first interfaces that prioritize clarity, usability, and brand identity—resulting in digital products that feel intuitive and impactful.
               </p>
               <img
-                src={websiteImage}
+                src={ux}
                 alt="Website Design"
                 className="w-full rounded-md object-cover"
               />
@@ -103,7 +103,7 @@ const DesignServices = () => {
                 I help define your product roadmap, user personas, and MVP scope—ensuring your UX and business goals align from day one.
               </p>
               <img
-                src={framerImage}
+                src={strategy}
                 alt="Product Strategy"
                 className="w-full rounded-md object-cover"
               />
