@@ -37,7 +37,7 @@ const LandingPage = () => {
       <Testimonial />
       <DoubleDiamond />
       <DesignProcess />
-      <Skills />
+      {/* <Skills /> */}
       <Faq />
       <Footer />
     </>
