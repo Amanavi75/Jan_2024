@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import LandingPage from "./pages/LandingPage";
-import AnimatedCursor from "react-animated-cursor";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Resource from "./pages/Resource";
@@ -11,7 +10,9 @@ import Shyftlabs from "./pages/Shyftlabs";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import RaikarGoodVibes from "./components/Landingsection/Casestudy/RaikarGoodVibes";
-import CartereDSL from "./components/Landingsection/Casestudy/CartereDSL";
+import CarterRedesign from "./components/Landingsection/Casestudy/CarterRedesign";
+import ProtectedRoute from "./components/ProtectedRoute";
+import AnimatedCursor from "react-animated-cursor";
 
 import {
   BrowserRouter as Router,
@@ -48,16 +49,16 @@ root.render(
           "button",
           ".link",
           {
-            target: '.custom',
+            target: ".custom",
             options: {
               innerSize: 12,
               outerSize: 12,
-              color: '255, 255, 255',
+              color: "255, 255, 255",
               outerAlpha: 0.3,
               innerScale: 0.7,
-              outerScale: 5
-            }
-          }
+              outerScale: 5,
+            },
+          },
         ]}
       />
     )}
@@ -71,8 +72,23 @@ root.render(
         <Route path="/resource" element={<Resource />} />
         <Route path="/shyftlabs" element={<Shyftlabs />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
-        <Route path="/Projects/Raikar" element={<RaikarGoodVibes />} />
-        <Route path="/Projects/CarterDSl" element={<CartereDSL />} />
+
+        <Route
+          path="/Projects/Raikar"
+          element={
+            <ProtectedRoute correctPassword="9155">
+              <RaikarGoodVibes />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/Projects/CarterRedesign"
+          element={
+            <ProtectedRoute correctPassword="9155">
+              <CarterRedesign />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Router>
   </div>
