@@ -1,7 +1,7 @@
 import Navbar from "../../Navbar";
 import Carter from "../../../assets/CarterRedesign/carter.png";
 import Oldcarter from "../../../assets/CarterRedesign/oldcarter.png";
-import Beforeafter from "../../../assets/CarterRedesign/beforeafter.png";
+import Beforeafter from "../../../assets/CarterRedesign/Beforeafter.png";
 import DSL from "../../../assets/CarterRedesign/dsl.png";
 import Footer from "../../Footer";
 const CarterRedesign = () => {
