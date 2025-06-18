@@ -7,10 +7,13 @@ import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Resource from "./pages/Resource";
 import Shyftlabs from "./pages/Shyftlabs";
-import Blog from "./pages/Blog";
+// import Blog from "./pages/Blog"; // Commented intentionally
 import Projects from "./pages/Projects";
+
 import RaikarGoodVibes from "./components/Landingsection/Casestudy/RaikarGoodVibes";
 import CarterRedesign from "./components/Landingsection/Casestudy/CarterRedesign";
+import Uvc from "./components/Landingsection/Casestudy/Uvc";
+
 import ProtectedRoute from "./components/ProtectedRoute";
 import AnimatedCursor from "react-animated-cursor";
 
@@ -86,6 +89,14 @@ root.render(
           element={
             <ProtectedRoute correctPassword="9155">
               <CarterRedesign />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/Projects/uvc"
+          element={
+            <ProtectedRoute correctPassword="9155">
+              <Uvc />
             </ProtectedRoute>
           }
         />
