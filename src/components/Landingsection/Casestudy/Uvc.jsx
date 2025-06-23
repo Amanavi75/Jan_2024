@@ -1,6 +1,11 @@
 import React from "react";
 import Navbar from "../../Navbar";
 import Footer from "../../Footer";
+import Newuvc from "../../../assets/uvc/newuvc.png";
+import Cms from "../../../assets/uvc/cms.png";
+import Old from "../../../assets/uvc/old.png";
+import Text from "../../../assets/uvc/text.png";
+import Template from "../../../assets/uvc/template.png";
 
 const Section = ({ title, children }) => (
   <section className="bg-white/5 border border-white/10 backdrop-blur-md p-10 rounded-3xl space-y-6">
@@ -40,7 +45,11 @@ const Uvc = () => {
               <li>Collaborated with dev teams for seamless implementation</li>
             </ul>
           </Section>
-
+          <img src={Cms} alt="" />
+          <img src={Old} alt="" />
+          <img src={Template} alt="" />
+          <img src={Newuvc} alt="" />
+          <img src={Text} alt="" />
           {/* Problem Statement */}
           <Section title="Problem Statement">
             <p>Legacy clinic websites were disconnected with:</p>
