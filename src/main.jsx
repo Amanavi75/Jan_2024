@@ -23,6 +23,7 @@ import {
   Route,
 } from "react-router-dom";
 import CarterDsp from "./components/Landingsection/Casestudy/CarterDsp";
+import CarterCampaign from "./components/Landingsection/Casestudy/CarterCampaign";
 
 // Check if device has fine pointer (like a mouse)
 const isMouseDevice = window.matchMedia("(pointer: fine)").matches;
@@ -106,6 +107,14 @@ root.render(
           element={
             <ProtectedRoute correctPassword="9155">
               <CarterDsp/>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/Projects/cartercampaign"
+          element={
+            <ProtectedRoute correctPassword="9155">
+             <CarterCampaign/>
             </ProtectedRoute>
           }
         />
