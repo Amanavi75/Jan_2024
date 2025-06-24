@@ -5,6 +5,7 @@ import Carter from "../../../assets/CarterRedesign/carter.png";
 import Oldcarter from "../../../assets/CarterRedesign/oldcarter.png";
 import Beforeafter from "../../../assets/CarterRedesign/Beforeafter.png";
 import DSL from "../../../assets/CarterRedesign/dsl.png";
+import Campaign from "../../../assets/dsp/campaign.png";
 import Footer from "../../Footer";
 const CarterDsp = () => {
   return (
@@ -28,7 +29,7 @@ const CarterDsp = () => {
             </p>
           </div>
 
-          <img src={Carter} alt="" />
+          <img src={Campaign} alt="" />
 
           <section className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-10 space-y-10 text-white">
             {/* Tags */}

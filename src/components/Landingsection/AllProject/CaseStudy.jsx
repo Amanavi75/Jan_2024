@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import CarterDSL from "../../../assets/Project/CarterDSL.png";
 import CarterRedesign from "../../../assets/Project/CarterRedesign.png";
 import UVC from "../../../assets/Project/UVC.png";
-import Raikar from "../../../assets/Project/raikar.webp";
+import Dsptemplate from "../../../assets/Img/Dsptemplate.png";
 
 const CaseStudy = () => {
   const navigate = useNavigate();
@@ -23,6 +23,13 @@ const CaseStudy = () => {
       image: CarterRedesign,
       link: "/Projects/CarterRedesign",
     },
+     {
+      title: "Raikar",
+      year: 2024,
+      categories: ["Design", "Strategy"],
+      image: Dsptemplate,
+      link: "/Projects/carterdsp",
+    },
     {
       title: "United Veterinary Care",
       year: 2024,
@@ -30,13 +37,7 @@ const CaseStudy = () => {
       image: UVC,
       link: "/Projects/CarterRedesign",
     },
-    {
-      title: "Raikar",
-      year: 2024,
-      categories: ["Design", "Branding"],
-      image: Raikar,
-      link: "/Projects/Raikar",
-    },
+   
   ];
 
   const handleProjectClick = (project) => {
