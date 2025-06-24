@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import CarterDSL from "../../../assets/Project/CarterDSL.png";
 import CarterRedesign from "../../../assets/Project/CarterRedesign.png";
 import UVC from "../../../assets/Project/UVC.png";
-import Dsptemplate from "../../../assets/Img/Dsptemplate.png";
+import Dsptemplate from "../../../assets/Img/dsptemplate.png";
 
 const CaseStudy = () => {
   const navigate = useNavigate();
