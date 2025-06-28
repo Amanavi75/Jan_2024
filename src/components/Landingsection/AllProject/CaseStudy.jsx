@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import CarterDSL from "../../../assets/Project/CarterDSL.png";
+import Cartercampaign from "../../../assets/Project/cartercampaign.png";
 import CarterRedesign from "../../../assets/Project/CarterRedesign.png";
 import UVC from "../../../assets/Project/UVC.png";
-import Dsptemplate from "../../../assets/Img/dsptemplate.png";
+import Dsptemplate from "../../../assets/Project/CarterDSP.png";
 
 const CaseStudy = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const CaseStudy = () => {
       title: "Carter Design System",
       year: 2024,
       categories: ["Case Study", "UI/UX"],
-      image: CarterDSL,
+      image: CarterRedesign,
       link: "/Projects/CarterDesignSystem",
     },
     {
@@ -28,7 +28,7 @@ const CaseStudy = () => {
       title: "Carter Redesign",
       year: 2024,
       categories: ["Design", "Branding"],
-      image: CarterRedesign,
+      image: Cartercampaign,
       link: "/Projects/CarterRedesign",
     },
     {
