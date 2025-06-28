@@ -45,11 +45,11 @@ const Uvc = () => {
               <li>Collaborated with dev teams for seamless implementation</li>
             </ul>
           </Section>
-          <img src={Cms} alt="" />
+          
           <img src={Old} alt="" />
-          <img src={Template} alt="" />
-          <img src={Newuvc} alt="" />
-          <img src={Text} alt="" />
+          
+          
+         
           {/* Problem Statement */}
           <Section title="Problem Statement">
             <p>Legacy clinic websites were disconnected with:</p>
@@ -62,6 +62,8 @@ const Uvc = () => {
           </Section>
 
           {/* Goals */}
+          <img src={Template} alt="" />
+          
           <Section title="Goals">
             <ul className="list-disc ml-5 space-y-1">
               <li>Unify design under consistent, scalable templates</li>
@@ -72,6 +74,7 @@ const Uvc = () => {
           </Section>
 
           {/* Research & Analysis */}
+          <img src={Cms} alt="" />
           <Section title="Research & Competitive Analysis">
             <p><strong>CMS Tools Analyzed:</strong> Payload, Strapi, Directus, Drupal, Webflow</p>
             <p><strong>Final Stack:</strong> CMS modeled on Payload + Strapi for flexibility</p>
@@ -81,6 +84,7 @@ const Uvc = () => {
           </Section>
 
           {/* Template Strategy */}
+           <img src={Text} alt="" />
           <Section title="Template Design Strategy">
             <ul className="list-disc ml-5 space-y-1">
               <li>UVC Corporate Landing Page</li>
@@ -94,6 +98,7 @@ const Uvc = () => {
           </Section>
 
           {/* CMS Flow */}
+          <img src={Newuvc} alt="" />
           <Section title="CMS Flow & Planning">
             <ul className="list-disc ml-5 space-y-1">
               <li>Modular page builder with drag-and-drop elements</li>

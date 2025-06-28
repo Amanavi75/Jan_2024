@@ -15,7 +15,15 @@ const CaseStudy = () => {
       year: 2024,
       categories: ["Case Study", "UI/UX"],
       image: CarterRedesign,
-      link: "/Projects/CarterDesignSystem",
+      link: "/Projects/CarterRedesign",
+    },
+    
+    {
+      title: "Carter Redesign",
+      year: 2024,
+      categories: ["Design", "Branding"],
+      image: Cartercampaign,
+      link: "/Projects/Cartercampaign",
     },
     {
       title: "Carter DSP Template",
@@ -23,13 +31,6 @@ const CaseStudy = () => {
       categories: ["Design", "Strategy"],
       image: Dsptemplate,
       link: "/Projects/CarterDSP",
-    },
-    {
-      title: "Carter Redesign",
-      year: 2024,
-      categories: ["Design", "Branding"],
-      image: Cartercampaign,
-      link: "/Projects/CarterRedesign",
     },
     {
       title: "United Veterinary Care",
