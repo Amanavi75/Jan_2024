@@ -88,7 +88,7 @@ const CarterDsp = () => {
               </div>
             </div>
           </section>
-          <img src={Oldcarter} alt="" />
+          {/* <img src={Oldcarter} alt="" /> */}
           {/* Problem */}
           <section className="bg-white/5 border border-white/10 backdrop-blur-lg p-12 rounded-3xl space-y-8">
             <p className="text-xs uppercase text-gray-400 tracking-widest font-semibold">
@@ -175,7 +175,7 @@ const CarterDsp = () => {
               storytelling, not logistics.
             </p>
           </section>
-          <img src={Beforeafter} alt="" />
+          {/* <img src={Beforeafter} alt="" /> */}
 
           {/* Solution */}
           <section className="bg-white/5 border border-white/10 backdrop-blur-lg p-12 rounded-3xl space-y-8">
@@ -243,7 +243,7 @@ const CarterDsp = () => {
             </div>
           </section>
 
-          <img src={DSL} alt="" />
+          {/* <img src={DSL} alt="" /> */}
           {/* Design System Section */}
           <section className="bg-white/5 border border-white/10 backdrop-blur-lg p-12 rounded-3xl space-y-12">
             <p className="text-xs uppercase text-gray-400 tracking-widest font-semibold">
