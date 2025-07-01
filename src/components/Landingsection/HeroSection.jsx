@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowUpRight, CircleDot } from "lucide-react";
 import BlackButton from "../elements/BlackButton";
 import OutlineButton from "../elements/OutlineButton";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -30,8 +31,12 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <Link to="/contact">
           <BlackButton text1="Contact Now" />
-          <OutlineButton text1="See All Projects" />
+          </Link>
+          <Link to="/projects">
+            <OutlineButton text1="See All Projects" />
+          </Link>
         </div>
 
         {/* Floating Testimonials */}
