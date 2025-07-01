@@ -1,8 +1,7 @@
 import Navbar from "../../Navbar";
-import Carter from "../../../assets/CarterRedesign/carter.png";
-import Oldcarter from "../../../assets/CarterRedesign/oldcarter.png";
-import Beforeafter from "../../../assets/CarterRedesign/Beforeafter.png";
-import DSL from "../../../assets/CarterRedesign/dsl.png";
+import Aditem from "../../../assets/cartercampigh/aditem.png";
+import Oldaditem from "../../../assets/cartercampigh/oldaditem.png";
+import Campaign from "../../../assets/cartercampigh/campaign.png";
 import Footer from "../../Footer";
 
 const CarterCampaign = () => {
@@ -17,14 +16,14 @@ const CarterCampaign = () => {
               Retail Media Network
             </div>
             <h1 className="text-5xl font-semibold text-white">
-              Carter Platform Redesign
+              Campaign Creation & Ad Item Redesign
             </h1>
             <p className="text-base text-gray-400 max-w-2xl mx-auto font-light">
               UX and UI redesign of Carter's Campaign Creation and Ad Item Management interfaces to enhance automation, visibility, and efficiency across the platform.
             </p>
           </div>
 
-          <img src={Carter} alt="Carter Overview" className="rounded-xl" />
+          <img src={Campaign} alt="Carter Overview" className="rounded-xl" />
 
           <section className="bg-white/5 border border-white/10 backdrop-blur-md p-10 rounded-2xl space-y-10 text-white">
             <h2 className="text-2xl font-semibold">Project Summary</h2>
@@ -63,6 +62,7 @@ const CarterCampaign = () => {
               <li>Reduce manual work by providing actionable, automated insights.</li>
             </ul>
           </section>
+          <img src={Oldaditem} alt="Carter Overview" className="rounded-xl" />
 
           <section className="bg-white/5 border border-white/10 backdrop-blur-md p-10 rounded-2xl space-y-10 text-white">
             <h2 className="text-2xl font-semibold">Campaign Creation Redesign</h2>
@@ -87,6 +87,8 @@ const CarterCampaign = () => {
               </tbody>
             </table>
           </section>
+
+          <img src={Aditem} alt="Carter Overview" className="rounded-xl" />
 
           <section className="bg-white/5 border border-white/10 backdrop-blur-md p-10 rounded-2xl space-y-10 text-white">
             <h2 className="text-2xl font-semibold">Ad Item Intelligence Redesign</h2>
